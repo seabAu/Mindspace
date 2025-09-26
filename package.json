@@ -20,7 +20,11 @@
     "scripts": {
         "start": "vite",
         "dev": "vite --mode development",
+        "start:dev": "env-cmd -f .env.development vite --mode development",
+        "start:prod": "env-cmd -f .env.production vite --mode production",
         "prod": "vite --mode production",
+        "build:dev": "env-cmd -f .env.development vite build --mode development",
+        "build:prod": "env-cmd -f .env.production vite build --mode production",
         "build": "vite build --mode production",
         "preview": "vite preview --mode production",
         "lint": "eslint .",

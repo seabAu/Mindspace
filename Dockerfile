@@ -1,32 +1,32 @@
-# Multi-stage build for React frontend
-FROM node:22-alpine AS client
+# ---- Stage 1: Build the React Application ----
+FROM node:20-alpine AS build
 
-# Set working directory
 WORKDIR /app
 
-# Copy package files
+# Copy package.json and lock file
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm install
 
-# Copy source code
+# Copy the rest of the application source code
 COPY . .
 
-# Build the application
+# Build the application for production
+# Note: Based on your vite.config.js, the output is 'dist'
 RUN npm run build
 
-# Production stage
-FROM nginx:alpine
+# ---- Stage 2: Serve with Nginx ----
+FROM nginx:stable-alpine
 
-# Copy built assets from builder stage
-COPY --from=builder /app/dist /usr/share/nginx/html
+# Copy the build output from the build stage to Nginx's web root directory
+COPY --from=build /app/dist /usr/share/nginx/html
 
-# Copy custom nginx configuration
+# Copy the custom Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80
+# Expose port 80 for the Nginx server
 EXPOSE 80
 
-# Start nginx
+# The default Nginx command will start the server
 CMD ["nginx", "-g", "daemon off;"]

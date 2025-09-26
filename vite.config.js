@@ -2,7 +2,7 @@
 // https://vitejs.dev/config/
 import path from "path";
 import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import svgr from "vite-plugin-svgr";
 // import reactRefresh from "eslint-plugin-react-refresh";
 import reactRefresh from '@vitejs/plugin-react-refresh';
@@ -12,6 +12,10 @@ import dotenv from 'dotenv';
 dotenv.config(); // load env vars from .env
 
 const VITE_NODE_ENV = 'production';
+
+// Load env file based on `mode` in the current working directory.
+// Set the third parameter to '' to load all env regardless of the `VITE_` prefix.
+const env = loadEnv( mode, process.cwd(), '' );
 
 // https://vitejs.dev/config/
 const config = defineConfig( {
@@ -40,8 +44,15 @@ const config = defineConfig( {
     // base: '/Mindspace/',
     // root: '',
     define: {
+        // Make environment variables available in the client-side code
         'process.env': process.env,
-        _global: ( {} )
+        _global: ( {} ),
+        'process.env.VITE_NODE_ENV': JSON.stringify( env.VITE_NODE_ENV ),
+        'process.env.VITE_PUBLIC_URL': JSON.stringify( env.VITE_PUBLIC_URL ),
+        'process.env.VITE_API_URL': JSON.stringify( env.VITE_API_URL ),
+        'process.env.VITE_GOOGLE_API_KEY': JSON.stringify( env.VITE_GOOGLE_API_KEY ),
+        'process.env.VITE_PUBLIC_SOCKET_SERVER_URL': JSON.stringify( env.VITE_PUBLIC_SOCKET_SERVER_URL ),
+        'process.env.VITE_PUBLIC_SOCKET_SERVER_PORT': JSON.stringify( env.VITE_PUBLIC_SOCKET_SERVER_PORT ),
     },
     resolve: {
         alias: {
@@ -70,8 +81,9 @@ const config = defineConfig( {
     },
     // Build options
     build: {
-        outDir: './dist',
+        outDir: './build',
         emptyOutDir: true, // also necessary
+        sourcemap: false,
     },
     preview: {
         port: 3200,
@@ -82,13 +94,12 @@ const config = defineConfig( {
             usePolling: true,
         },
         host: true, // needed for the Docker Container port mapping to work
-        // port: 3311,
         port: 3200,
         open: true, // automatically open the app in the browser
         origin: 'http://127.0.0.1:3200',
         proxy: {
             "/api": {
-                target: VITE_NODE_ENV === 'production'
+                target: env.VITE_NODE_ENV === 'production'
                     ? ( "http://mindspace.seangb.com" )
                     : ( "http://localhost:4200" ),
                 changeOrigin: true,

@@ -1,0 +1,52 @@
+name: Build and Deploy Client to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GH_USERNAME }}
+          password: ${{ secrets.GH_PAT }}
+          
+      - name: Build and push Podman image
+        run: |
+          IMAGE_ID=ghcr.io/${{ secrets.GH_USERNAME }}/Mindspace-Client
+          # Use podman, but docker build commands are compatible
+          podman build -t $IMAGE_ID:latest .
+          podman push $IMAGE_ID:latest
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /home/sites/mindspace
+            # Log in to GHCR on the server
+            podman login ghcr.io -u ${{ secrets.GH_USERNAME }} -p ${{ secrets.GH_PAT }}
+            # Pull the latest image
+            podman pull ghcr.io/${{ secrets.GH_USERNAME }}/Mindspace-Client:latest
+            # Restart the services with the new image
+            podman-compose up -d --force-recreate mindspace-client
+            # Clean up old, unused images
+            podman image prune -f
