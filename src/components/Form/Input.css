@@ -1,0 +1,1432 @@
+/* @import '../../vars.css'; */
+
+/* @import '../../utilities.css'; */
+
+.form-container {
+    padding: 4px 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container-block {}
+
+.form-container-block .form-inputs-container {
+    width: 100%;
+    height: auto;
+}
+
+.form-container-block .form-viewport-container {
+    width: 100%;
+    height: auto;
+}
+
+.form-container-inline {
+    padding: 4px 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-container-inline .form-inputs-container {
+    height: 100%;
+    width: auto;
+    flex: 1 1 50%;
+}
+
+.form-container-inline .form-viewport-container {
+    height: 100%;
+    width: auto;
+    flex: 1 1 auto;
+    flex: 1 1 50%;
+}
+
+.form-container * {
+    max-width: 100% !important;
+    min-width: 0% !important;
+    /* width: 100%; */
+}
+
+.form-container-admin {
+    padding: 4px 0;
+    margin: 0;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container-admin > * {}
+
+.form-row {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.form-group {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-input {
+    width: 100%;
+    height: 2rem;
+}
+
+.form-group {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: inherit;
+    box-shadow:
+        inset 2px 2px 2px #171717,
+        inset -2px -2px 2px rgb(68, 60, 60);
+}
+
+.form-button-submit {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+.form-button-row {
+    gap: 1rem;
+}
+
+.form-submit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.form-inputs-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+}
+
+.form-group {
+    /* A collection of input fields OR input field groups. Arranged either in a row or column. */
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group {
+    /* A collection of input fields. Arranged either in a row or column. */
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group.input-group-inline {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.input-group.input-group-block {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.input-group.input-group-block .input-field .input-field-label {
+    width: 10rem;
+}
+
+.input-field-label.input-field-label-aligned {
+    max-width: 20rem;
+    width: 10rem;
+}
+
+.input-field {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+}
+
+.input-field.input-field-inline-reverse {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+/*
+.input-field .input-field-label {
+    display: flex;
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-shadow: var(--text-shadow-params);
+    white-space: nowrap !important;
+    color: rgb(185, 185, 185);
+    border-width: 1px;
+    border-style: outset;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    border-radius: 3px;
+    transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0.0rem 0.125rem;
+    background: linear-gradient( rgba(255, 255, 255, 0.0666667), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+}
+*/
+/*
+.input-field .input-field-label {
+	display: flex;
+	align-content: stretch;
+	justify-content: flex-end;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-shadow: var(--text-shadow-params);
+	white-space: nowrap !important;
+	color: rgb(185, 185, 185);
+	border-width: 1px;
+	border-style: outset;
+	border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+	border-radius: 3px;
+	transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	padding: 0rem 0.125rem;
+	min-height: 1.5rem;
+	background: linear-gradient(rgba(255, 255, 255, 0.0666667), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+	background-color: transparent;
+	background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	background: -o-linear-gradient(top, #221616 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
+	background: -webkit-linear-gradient(top, #332c2c 0%, #250909 100%);
+}
+*/
+
+.input-field .input-field-label {
+    display: flex;
+    /* align-content: stretch; */
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-shadow: var(--text-shadow-params);
+    white-space: nowrap !important;
+    color: rgb(185, 185, 185);
+    padding: 0px -0.5rem;
+    transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    min-height: 1.5rem;
+    /* background: linear-gradient(rgba(255, 255, 255, 0.0666667), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60); */
+    /* background-color: transparent; */
+    /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+    /* background: -webkit-linear-gradient(top, #332c2c 0%, #250909 100%); */
+}
+
+.input-field .input-field-label.embossed {
+    border-width: 1px;
+    border-style: outset;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    border-radius: 3px;
+}
+
+.input-field .input-field-control {
+    text-shadow: var(--text-shadow-params);
+    border-style: inset;
+}
+
+.input-field.input-field-inline {
+    display: inline-flex;
+    flex-direction: row;
+    /*
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    */
+    flex: 1 1 100%;
+    padding: 0.125rem 0.125rem;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.input-field.input-field-inline .input-field-label {
+    display: inline-flex;
+    flex: 1 1 20%;
+    flex: 0 1 auto;
+    padding-inline: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-field.input-field-inline .input-field-control {
+    display: inline-flex;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-field.input-field-block {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+    padding: 0.125rem 0.125rem;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.input-field.input-field-block .input-field-label {
+    display: inline-flex;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-field.input-field-block .input-field-control {
+    display: inline-flex;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-field.input-field-block .input-field-label.input-field-label-aligned {
+    max-width: 10rem;
+}
+
+.input-field-control,
+.input-field-label {
+    padding-inline: 0.5rem 1rem;
+}
+
+.input-field-label {
+    border-style: groove;
+    border-width: 0.0;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    background-color: linear-gradient(rgba(255, 255, 255, 0.0666667),
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, 0) 51%,
+            rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+}
+
+.input-field-label-text {
+    text-shadow: var(--text-shadow-params);
+    white-space: nowrap !important;
+    /* color: rgb(185, 185, 185); */
+    padding: 0rem 1rem;
+    /* background: linear-gradient( rgba(255, 255, 255, 0.0666667), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60); */
+}
+
+.input-field-control {
+    border-style: inset;
+    background-color: var(--color-secondary);
+}
+
+/* .input-field > *, 
+.input-field > .input-field-label,
+.input-field > .input-field-control {
+    line-height: 19px;
+    text-indent: 0.5rem;
+    resize: vertical;
+    padding: 0;
+    margin: 0;
+    padding-inline: 0.25rem;
+    min-height: 1.5rem;
+    height: 100%;
+    background: linear-gradient( rgba(255, 255, 255, 0.0666667), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+}
+*/
+/* 
+    width: fit-content; 
+    width: -moz-fit-content;
+    flex: 1 0 auto;
+    min-width: 100%;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px rgba(255, 255, 255, 0.0784314);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.0980392), 0px 1px 1px rgba(0, 0, 0, 0.14902);
+*/
+/*
+.input-field > * {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    border-radius: 3px;
+    color: rgb(185, 185, 185);
+    background: #333333;
+    background-color: #333333;
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px;
+    line-height: 19px;
+    text-indent: 0.5rem;
+    resize: vertical;
+    padding: 0;
+    margin: 0;
+    padding-inline: 0.125rem;
+    min-height: 1.5rem;
+    width: -moz-fit-content;
+    height: 100%;
+    transition: 0.1s ease-out;
+    transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+*/
+
+.input-field {
+    width: 100%;
+}
+
+.input-field input[type='text'],
+.input-field textarea {
+    line-height: 19px;
+    resize: vertical;
+    overflow: auto;
+    transition: 0.1s height ease-out;
+}
+
+textarea {
+    height: 5rem;
+}
+
+.input-field input,
+.input-field input[type='text'],
+.input-field input[type='email'],
+.input-field input[type='password'],
+.input-field input[type='url'],
+.input-field input[type='search'],
+.input-field input[type='tel'],
+.input-field input[type='date'],
+.input-field input[type='select'],
+.input-field textarea {
+    width: 100%;
+    color: rgb(185, 185, 185);
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px;
+    /* line-height: 19px; */
+    border-width: 1px;
+    border-style: hidden;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    border-radius: 3px;
+    transition: 0.1s ease-out;
+    background: #333333;
+    background-color: #333333;
+    /* resize: vertical; */
+    box-shadow:
+        0px 1px 0px 0px rgba(255, 255, 255, 0.0980392),
+        0px 1px 1px rgba(0, 0, 0, 0.14902);
+    height: 1.5rem;
+    border-width: 1px;
+    border-style: inset;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    border-radius: 3px;
+    background: inset linear-gradient(rgba(255, 255, 255, 0.0666667),
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, 0) 51%,
+            rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+}
+
+/*
+    .input-field input, 
+    .input-field input[type="text"], 
+    .input-field input[type="email"], 
+    .input-field input[type="password"], 
+    .input-field input[type="url"], 
+    .input-field input[type="search"], 
+    .input-field input[type="tel"], 
+    .input-field input[type="date"], 
+    .input-field input[type="select"], 
+    .input-field textarea {
+        width: 100%;
+        color: rgb(185, 185, 185);
+        text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px;
+        line-height: 19px;
+        border-width: 1px;
+        border-style: hidden;
+        border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+        border-radius: 3px;
+        transition: 0.1s ease-out;
+        background: #333333;
+        background-color: #333333;
+        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.0980392), 0px 1px 1px rgba(0, 0, 0, 0.14902);
+        background: inset linear-gradient( rgba(255, 255, 255, 0.0666667), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+    }
+*/
+
+.input-field input:focus,
+.input-field input[type='text']:focus,
+.input-field input[type='password']:focus,
+.input-field input[type='email']:focus,
+.input-field input[type='url']:focus,
+.input-field input[type='search']:focus,
+.input-field input[type='tel']:focus,
+.input-field input[type='date']:focus,
+.input-field textarea:focus {
+    color: rgb(223, 223, 223);
+    outline: none;
+    background: #3d3d3d;
+    background-color: #3d3d3d;
+    box-shadow:
+        inset 0px 1px 0px 0px rgba(255, 255, 255, 0.0980392),
+        0px 1px 1px 1px rgba(0, 0, 0, 0.14902);
+    /* 
+    border: 2px solid #4d3838;
+    box-shadow: inset 0 0 4px rgba(147, 147, 147, 1);
+    box-shadow: inset 0px 0px 1px 1px rgba(111, 85, 251, 1);
+    */
+    border-style: inset;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+}
+
+.input-field input:hover,
+.input-field input[type='text']:hover,
+.input-field input[type='password']:hover,
+.input-field input[type='email']:hover,
+.input-field input[type='url']:hover,
+.input-field input[type='search']:hover,
+.input-field input[type='tel']:hover,
+.input-field input[type='date']:hover,
+textarea:hover {
+    color: rgb(255, 255, 255);
+    outline: none;
+    background: #626262;
+    box-shadow:
+        inset 0px 1px 0px 0px rgba(255, 255, 255, 0.0980392),
+        0px 1px 1px 1px rgba(0, 0, 0, 0.14902);
+    /* 
+    border: 2px solid #4d3838;
+    box-shadow: inset 0 0 4px rgba(147, 147, 147, 1);
+    box-shadow: inset 0px 0px 1px 1px rgba(111, 85, 251, 1);
+    */
+    border-width: 1px;
+    border-style: inset;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+}
+
+/*
+.input-field input, .input-field input[type="text"], .input-field input[type="email"], .input-field input[type="password"], .input-field input[type="url"], .input-field input[type="search"], .input-field textarea {
+    color: rgb(185, 185, 185);
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px;
+    line-height: 19px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    border-radius: 3px;
+    transition: 0.1s ease-out;
+    background: #333333;
+    background-color: #333333;
+    resize: vertical;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 1pxrgba(255, 255, 255, 0.0784314);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.0980392), 0px 1px 1px rgba(0, 0, 0, 0.14902);
+    background: inset linear-gradient( rgba(255, 255, 255, 0.0666667), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+}
+.input-field > * {
+    border-style: solid;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    border-radius: 3px;
+    color: rgb(185, 185, 185);
+    background: #333333;
+    background-color: #333333;
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px;
+    line-height: 19px;
+    text-indent: 0.5rem;
+    resize: vertical;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 0;
+    padding-inline: 0.25rem;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    min-height: 1.5rem;
+    width: -moz-fit-content;
+    flex: 1 0 auto;
+    height: 100%;
+    background: linear-gradient( rgba(255, 255, 255, 0.0666667), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.067), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.2));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: padding-box;
+    background-clip: padding-box;
+    background-color: rgb(51, 55, 60);
+    transition: 0.1s ease-out;
+}
+
+.input-field {
+    margin: 0;
+    padding: 2px 4px;
+    width: 100%;
+}
+.input-field.input-field-inline .input-field-label {
+    min-width: 1rem !important;
+    overflow-wrap: normal!important;
+    white-space: nowrap;
+    width: auto;
+}
+.input-field {
+    margin: 0;
+    padding: 2px 4px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.input-field.input-field-inline .input-field-label {
+    display: inline;
+    padding: 4px 4px;
+    margin: 0;
+    width: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+*/
+
+/* Data Input container styles */
+
+.data-input-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-between;
+    padding-inline: 0.25rem;
+    padding-block: 0.125rem;
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-style: inset;
+    border-color: black rgb(17, 17, 17) rgb(17, 17, 17);
+    border-radius: 3px;
+    color: rgb(185, 185, 185);
+    background: #333333;
+    background-color: #333333;
+    background: inset linear-gradient(rgba(255, 255, 255, 0.0666667),
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, 0) 51%,
+            rgba(0, 0, 0, 0.2)) padding-box rgb(51, 55, 60);
+}
+
+.data-input-container > * {
+    text-indent: 0;
+    padding-inline: 0.25rem;
+}
+
+.data-input-controls {
+    /* background: linear-gradient( rgba(0, 0, 0, 0.0980392), transparent 50%, rgba(255, 255, 255, 0.0666667) ) #323538; */
+    border-color: #000 #111 #111;
+    border-style: inset;
+    box-shadow:
+        rgba(0, 0, 0, 0.247059) 0 1px 2px inset,
+        rgba(255, 255, 255, 0.0784314) 0 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Data Input input field styles */
+
+.input-field-data {
+    padding-inline: 2rem;
+}
+
+.input-field-data-array {
+    padding-inline: 2rem;
+}
+
+/* Data Input output element styles */
+.data-input-field-container {
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.data-input-field-container {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+    /* 
+    padding: 0.25rem 0.25rem;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    */
+}
+
+.data-input-field-inline-controls {
+    display: inline-flex;
+    align-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1 100%;
+}
+
+.data-input-field {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+}
+
+.data-input-visual-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.data-input-cell-list-container {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    width: 100%;
+}
+
+.data-input-cell-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.data-input-cell-item {
+    cursor: pointer;
+    margin: 0.125rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow:
+        inset 1px 1px 1px -1px #888888bb,
+        inset -1px -1px 1px -1px #000000bb;
+    background-color: var(--color-quaternary);
+    width: 100%;
+    transition: var(--transition-bezier-0pt2);
+    flex: 1 1 auto;
+}
+
+.data-input-cell-item.mosaic-item {
+    width: min-content;
+}
+
+.data-input-cell-item:hover {
+    box-shadow:
+        inset 1px 1px 1px 0px #00000055,
+        inset -1px -1px 1px 0px #78787855;
+    background-color: var(--color-quinary);
+}
+
+.data-input-cell-item:focus {
+    box-shadow:
+        inset 5px 5px 10px -1px #00000080,
+        inset -5px -5px 10px -2px #78787880;
+}
+
+.data-input-cell-item.active {
+    box-shadow:
+        inset 1px 1px 1px -1px #000000bb,
+        inset -1px -1px 1px -1px #888888bb;
+    flex: 1 1 100%;
+}
+
+.data-input-cell-item-text,
+.data-input-cell-item-info {
+    user-select: none;
+    color: var(--color-text);
+    font-size: 0.6rem;
+    line-height: normal;
+    padding: 0;
+    padding: 0.0125rem 0.5rem;
+    margin: 2px;
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+    width: auto;
+    max-width: 100%;
+    /*
+        text-shadow: 0 1px 0 #ccc,
+                   0 2px 0 #c9c9c9,
+                   0 3px 0 #bbb,
+                   0 4px 0 #b9b9b9,
+                   0 5px 0 #aaa,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+    */
+    text-shadow: inset 1px 0.15rem 0.15rem #000000bb;
+    text-shadow:
+        1px 1px 1px #000000,
+        1px 1px 1px #ffffff,
+        3px 3px 5px rgba(57, 57, 164, 0.709);
+    text-shadow:
+        0 1px 0px #ccc,
+        0 1px 0px rgba(0, 0, 0, 0.1),
+        0 2px 0px #080505,
+        0 3px 0px #0f0d0d,
+        0 2px 0px rgba(0, 0, 0, 0.6),
+        0 3px 0px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 0.15rem 0.15rem #000000bb;
+    max-width: 300ch;
+}
+
+.data-input-cell-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.5rem;
+    border-right: 1px solid grey;
+}
+
+.data-input-cell-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+}
+
+.data-input-cell-item-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+}
+
+.data-input-cell-item-text.data-key {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+.data-input-cell-item-text.data-value {
+    color: #ccc;
+}
+
+.data-input-cell-item-toolbar {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee44;
+    height: 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+}
+
+.cell-toolbar-button {
+    padding: 2rem 5rem;
+    width: auto;
+    height: auto;
+}
+
+.data-input-cell-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0.125rem;
+    margin: 0;
+    min-width: min-content;
+    width: 100%;
+}
+
+.data-input-cell-item-info {
+    font-size: 0.6rem;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+    width: auto;
+    max-width: 100%;
+}
+
+.list-mosaic {
+    height: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    align-content: center;
+    /*grid vertical-align*/
+    justify-content: center;
+    /*grid horizontal-align*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: 0 0 0 4px #fff inset; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-columns: 300px 100px;
+}
+
+.list-mosaic div {
+    border-radius: 10px;
+    transition: all 1s;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.list-mosaic div:hover,
+.list-mosaic div:active {
+    filter: grayscale(1);
+}
+
+.list-mosaic div:nth-child(2) {
+    grid-column: span 2;
+    grid-column-end: span 2;
+}
+
+.list-mosaic div:nth-child(2) {
+    grid-row: span 2;
+    grid-row-end: span 2;
+}
+
+
+.input-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+:root {
+    counter-reset: masonry;
+}
+
+.masonry {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 0;
+}
+
+.masonry-item {
+    border-radius: 5px;
+}
+
+.masonry-item {
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.masonry-item,
+.masonry-item img {
+    position: relative;
+}
+
+.masonry-item:after {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: counter(masonry);
+    counter-increment: masonry;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in;
+}
+
+.masonry-item:hover:after {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*  */
+/*  */
+/* SELECT INPUT STYLING */
+/*  */
+/*  */
+
+/* This hides native dropdown button arrow in IE */
+.input-field-select:focus {
+    box-shadow: 0 0 1px 1px rgba(180, 222, 250, 0.05);
+    outline: none;
+}
+
+.input-field-select {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 100%;
+    height: 31px;
+    height: 1.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(17, 17, 17) rgb(17, 17, 17) black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow:
+        rgba(255, 255, 255, 0.0784314) 0px 1px inset,
+        rgba(255, 255, 255, 0.0784314) 0px 0px 0px 1px inset,
+        rgba(0, 0, 0, 0.247059) 0px -1px 2px inset,
+        rgba(0, 0, 0, 0.0980392) 0px 1px 2px;
+    background: linear-gradient(rgba(255, 255, 255, 0.0784314),
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, 0) 51%,
+            rgba(0, 0, 0, 0.247059)) rgb(70, 74, 79);
+}
+
+.input-field-select:hover {
+    background-color: rgb(77, 81, 89);
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.input-field-select > select {
+    display: block;
+    position: relative;
+    width: 112%;
+    height: 29px;
+    line-height: 17px;
+    margin: 0px;
+    padding: 6px 6px 6px 10px;
+    color: rgb(221, 221, 221);
+    text-shadow: rgba(0, 0, 0, 0.701961) 0px -1px;
+    border: 0px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(0, 0, 0, 0);
+}
+
+.input-field-select > select:focus {
+    z-index: 2;
+    width: 100%;
+    outline: rgb(35, 110, 171) solid 1px;
+    outline-offset: -1px;
+}
+
+.input-field-select::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    right: 12px;
+    width: 0px;
+    height: 0px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221) transparent transparent;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px -1px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+/* Custom select dropdown arrow */
+
+select::after {
+    content: '';
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    align-items: center;
+    appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-color: transparent;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            color-stop(0%, #ffffff),
+            color-stop(100%, #e5e5e5));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: #f3f3f3;
+    background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+    border-radius: 0.125rem;
+    border: 1px solid #bbb;
+    border: none;
+    border: none;
+    box-shadow: 0.0125rem 0.0125rem 0.25rem 0.125rem rgba(0, 0, 0, 0.4);
+    color: var(--color-text);
+    cursor: pointer;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
+    font-family: inherit;
+    font-size: var(--font-size-table);
+    font-weight: bold;
+    grid-template-areas: 'select';
+    line-height: 0.75rem;
+    margin: 0;
+    outline: none;
+    padding: 0.25rem 0.3rem;
+    position: relative;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 100%;
+    z-index: 1;
+    height: auto;
+}
+
+.input-field-select select,
+.input-field-select::after {
+    grid-area: select;
+}
+
+.input-field-select:not(.input-field-select--multiple)::after {
+    content: '';
+    justify-self: end;
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+select:focus + .focus {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid var(--select-focus);
+    border-radius: inherit;
+}
+
+select[multiple] {
+    padding-right: 0;
+    /*
+   * Safari will not reveal an option
+   * unless the select height has room to 
+   * show all of it
+   * Firefox and Chrome allow showing 
+   * a partial option
+   */
+    height: 8rem;
+    /* 
+   * Experimental - styling of selected options
+   * in the multiselect
+   * Not supported crossbrowser
+   */
+    width: 100%;
+    height: 8em;
+    resize: both;
+}
+
+select[multiple] option {
+    white-space: normal;
+    outline-color: var(--select-focus);
+}
+
+.input-field-select--disabled {
+    cursor: not-allowed;
+    background-color: #eee;
+    background-image: linear-gradient(to top, #ddd, #eee 33%);
+}
+
+label {
+    font-weight: 500;
+}
+
+.input-field-select + label {
+    margin-top: 1rem;
+}
+
+.input-field-select option {
+    text-shadow: none;
+    /* color: #444; */
+    background: linear-gradient(rgba(255, 255, 255, 0.0784314),
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, 0) 51%,
+            rgba(0, 0, 0, 0.247059)) rgb(70, 74, 79);
+}
+
+.option {
+    vertical-align: top;
+    width: 100%;
+    height: 18px;
+}
+
+.option > input {
+    left: 0px;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+}
+
+option {
+    background-color: #ffffff;
+}
+
+option:before {
+    content: '>';
+    font-size: 20px;
+    display: none;
+    padding-right: 10px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+option.option.option-selected {
+    background-color: #9bc0ed;
+}
+
+/*
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    outline: none;
+}
+select::-ms-expand {
+    display: none;
+}
+.input-field-select {
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+.input-field-select select, .input-field-select::after {
+    grid-area: select;
+}
+.input-field-select:not(.input-field-select--multiple)::after {
+    content: "";
+    justify-self: end;
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+select:focus+.focus {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid var(--select-focus);
+    border-radius: inherit;
+}
+select[multiple] {
+    padding-right: 0;
+
+height: 6rem;
+
+}
+select[multiple] option {
+    white-space: normal;
+    outline-color: var(--select-focus);
+}
+.input-field-select--disabled {
+    cursor: not-allowed;
+    background-color: #eee;
+    background-image: linear-gradient(to top, #ddd, #eee 33%);
+}
+label {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.input-field-select+label {
+    margin-top: 2rem;
+}
+*/
+
+.input-field input[type='date'].input-field-control::-webkit-datetime-edit,
+.input-field input[type='date'].input-field-control::-webkit-inner-spin-button,
+.input-field input[type='date'].input-field-control::-webkit-clear-button {
+    color: #fff;
+    position: relative;
+}
+
+.input-field input[type='date'].input-field-control::-webkit-datetime-edit-year-field {
+    position: absolute !important;
+    border-left: 1px solid #8c8c8c;
+    padding: 2px;
+    color: #000;
+    left: 56px;
+}
+
+.input-field input[type='date'].input-field-control::-webkit-datetime-edit-month-field {
+    position: absolute !important;
+    border-left: 1px solid #8c8c8c;
+    padding: 2px;
+    color: #000;
+    left: 26px;
+}
+
+.input-field input[type='date'].input-field-control::-webkit-datetime-edit-day-field {
+    position: absolute !important;
+    color: #000;
+    padding: 2px;
+    left: 4px;
+}
+
+/*
+*
+*
+* Checkbox Styles
+*
+*
+*/
+
+.input-field:has(.input-field-checkbox) + .input-field .input-field-label {
+    width: auto;
+}
+
+.input-field-checkbox,
+.radio {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(17, 17, 17) rgb(17, 17, 17) black;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow:
+        rgba(255, 255, 255, 0.0784314) 0px 1px inset,
+        rgba(255, 255, 255, 0.0784314) 0px 0px 0px 1px inset,
+        rgba(0, 0, 0, 0.247059) 0px -1px 2px inset,
+        rgba(0, 0, 0, 0.0980392) 0px 1px 2px;
+    background: linear-gradient(rgba(255, 255, 255, 0.0784314),
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, 0) 51%,
+            rgba(0, 0, 0, 0.247059)) padding-box rgb(70, 74, 79);
+}
+
+.input-field-checkbox::before,
+.radio::before {
+    content: '';
+    display: none;
+}
+
+input:checked + .input-field-checkbox::before,
+input:checked + .radio::before {
+    display: block;
+}
+
+input:checked + .blue.input-field-checkbox,
+input:checked + .blue.radio {
+    background-image: linear-gradient(rgb(40, 123, 189), rgb(22, 75, 127));
+    background-color: rgb(34, 101, 161);
+}
+
+input:focus + .checkbox,
+input:focus + .radio,
+input.focus + .input-field-checkbox,
+input.focus + .radio {
+    background-color: rgb(88, 93, 103);
+}
+
+.input-field-checkbox::before {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 8px;
+    height: 3px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-width: 0px 0px 2px 2px;
+    transform: rotate(-45deg);
+    box-shadow:
+        rgba(0, 0, 0, 0.2) -1px 0px,
+        rgba(0, 0, 0, 0.498039) 0px 1px;
+}
+
+.radio {
+    border-radius: 9px;
+}
+
+.radio::before {
+    margin: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.0980392) 0px 1px;
+    background: rgb(17, 17, 17);
+}
+
+.lt-ie9 .option > input {
+    position: static;
+    padding: 0px;
+}
+
+.lt-ie9 .input-field-checkbox,
+.lt-ie9 .radio {
+    display: none;
+}

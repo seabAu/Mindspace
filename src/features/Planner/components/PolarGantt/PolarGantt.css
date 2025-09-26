@@ -1,0 +1,62 @@
+.polar-gantt {
+    font-family: Arial, sans-serif;
+}
+
+.clock-frame {
+    fill: rgba(24, 24, 31, 0.8);
+}
+
+.clock-background {
+    fill: rgba(31, 30, 39, 0.8);
+}
+
+.hours-tick,
+.sub-tick {
+    stroke: white;
+    stroke-width: 2;
+}
+
+.hours-label {
+    fill: white;
+    font-size: 14px;
+}
+
+.agenda-arc-path {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.agenda-arc-path:hover {
+    opacity: 1;
+}
+
+.agenda-label {
+    fill: white;
+    font-size: 12px;
+}
+
+.clock-hands-container {
+    
+}
+
+.clock-hands {
+
+}
+
+.clock-hands line {
+    stroke: white;
+    stroke-width: 2;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hours-hand {
+    stroke-width: 3;
+}
+
+.seconds-hand {
+    stroke: #ff4136;
+}
+
+.hands-cover {
+    fill: white;
+}

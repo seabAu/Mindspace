@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --bgGradientSpectrum: linear-gradient(0deg, #000000 5%, #000000 5%, #ff5151 25%, #ff7d29 35%, #ffde4c 45%, #5dff5d 55%, #7babff 65%, #9506fb 75%, #ff9dff 82%, #000000 95%, #000000 95%);
+    --bgGradientLime: linear-gradient(90deg, #ff7113 13%, #6eff27 75%);
+    --bgGradientSky: linear-gradient(90deg, #1E90FF 0%, #fff6c7 50%, #00BFFF 100%);
+}
+
+.cosmetic-wrapper-glow-spectrum:before {
+    aspect-ratio: 7 / 9;
+    background-image: var(--bgGradientSpectrum);
+    border-radius: 8px;
+    content: "";
+    filter: blur(5px);
+    inset: 0;
+    position: absolute;
+}
+
+.cosmetic-wrapper-glow-lime:before {
+    aspect-ratio: 7 / 9;
+    background-image: var(--bgGradientLime);
+    border-radius: 8px;
+    content: "";
+    filter: blur(5px);
+    inset: 0;
+    position: absolute;
+}
+
+.cosmetic-wrapper-glow-sky:before {
+    aspect-ratio: 7 / 9;
+    background-image: var(--bgGradientSky);
+    border-radius: 8px;
+    content: "";
+    filter: blur(5px);
+    inset: 0;
+    position: absolute;
+}
+
+.glow-filter-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Poppins;
+    background: #000;
+    font-size: calc(var(--_size) * 0.022);
+    --_factor: min(1000px, 100vh);
+    --_size: min(var(--_factor), 100vw);
+}
+
+.glow-filter-content {}
+
+svg.filters {
+    height: 0;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-text {
+    color: #c8c2bd;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -0.009em;
+}
+
+.glow-filter {
+    position: relative;
+    display: inline-block;
+    scale: 1;
+
+    animation: onloadscale 1s ease-out forwards;
+}
+
+.glow-filter::before {
+    content: attr(data-text);
+    position: absolute;
+    pointer-events: none;
+    color: #fffaf6;
+    background: linear-gradient(0deg, #dfe5ee 0%, #fffaf6 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: url(#glow-4);
+    -moz-filter: url(#glow-4);
+    -webkit-filter: url(#glow-4);
+
+    opacity: 0;
+    animation: onloadopacity 1s ease-out forwards;
+}
+
+@keyframes onloadscale {
+    24% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.02;
+    }
+}
+
+@keyframes onloadopacity {
+    24% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+@property --a {
+    /* must register --a to animate it */
+    syntax: "<angle>";
+    initial-value: 0deg;
+    /* used only on pseudo, nowhere to be inherited, 
+   * better perf if set false */
+    inherits: false;
+}
+
+.section-content.inner-glow,
+.card.inner-glow {
+    /* hide outer part of glow */
+    overflow: hidden;
+    /* needed for absolutely positioned pseudo */
+    position: relative;
+    /* adjust width as needed IF it's even necessary to set */
+    width: min(12.5em, 80vmin);
+    /* adjust aspect-ratio OR height IF height not given by content */
+    aspect-ratio: 1;
+    /* round outer card corners */
+    border-radius: 0.5em;
+    /* text & layout styles below just for prettifying */
+    place-self: center;
+    place-content: center;
+    padding: 0.5em;
+    color: #ededed;
+    font: clamp(1em, 2vw + 2vh, 2em) sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background-blend-mode: multiply;
+    text-wrap: balance;
+}
+
+/* animate --a from its initial-value 0deg to 1turn */
+@keyframes a {
+    to {
+        --a: 1turn;
+    }
+}
+
+.inner-glow::before {
+    position: absolute;
+    /* z-index: 0; */
+    inset: 0em;
+    /* top: 0; */
+    border: solid 1.25em;
+    border-image: conic-gradient(from var(--a),
+            #669900,
+            #99cc33,
+            #ccee66,
+            #006699,
+            #3399cc,
+            #990066,
+            #cc3399,
+            #ff6600,
+            #ff9900,
+            #ffcc00,
+            #669900) 1;
+    filter: blur(2.5rem);
+    animation: a 4s linear infinite;
+    content: "";
+    overflow: hidden;
+    lighting-color: red;
+    lighting-color: hsl(120deg 75% 25% / 60%);
+    lighting-color: currentcolor;
+    opacity: 0.25;
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    /* margin: 0rem; */
+    /* padding: 5rem; */
+    /* content-visibility: revert; */
+    /* backdrop-filter: blur(2.5rem) brightness(10); */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-blend-mode: hard-light;
+}

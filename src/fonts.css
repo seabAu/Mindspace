@@ -1,0 +1,463 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Outline&family=Bungee+Tint&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Doto:wght@100..900&family=Geologica:wght@100..900&family=Jacquard+12&family=Lekton:ital,wght@0,400;0,700;1,400&family=Libre+Barcode+39+Text&family=Martian+Mono:wdth,wght@75..112.5,100..800&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:wdth@87.5&family=Oxygen+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sono:wght@200..800&family=Syne+Mono&family=Turret+Road:wght@200;300;400;500;700;800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Jaro:300');
+@import url('https://fonts.googleapis.com/css?family=Lusitana:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cabin+Sketch:wght@400;700&family=Concert+One&family=Julius+Sans+One&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Jura:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* // <weight>: Use a value from 100 to 800
+// <width>: Use a value from 75 to 112.5
+// <uniquifier>: Use a unique and descriptive class name */
+
+/* Font classes */
+
+.font-rethink-sans {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-jura {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-quicksand {
+    /* Why wasn't this called Quicksans? Missed opportunity! */
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-encode-sans-sc {
+    font-family: "Encode Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-100 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-200 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-300 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-400 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-500 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-600 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-700 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-800 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.martian-mono-900 {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Bungee Outline: CSS class */
+
+.bungee-outline-regular {
+    font-family: 'Bungee Outline', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bungee Tint: CSS class */
+
+.bungee-tint-regular {
+    font-family: 'Bungee Tint', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Doto: CSS class for a variable style */
+/* // <weight>: Use a value from 100 to 900 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.doto-400 {
+    font-family: 'Doto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'ROND' 0;
+}
+
+/* Jacquard 12: CSS class */
+
+.jacquard-12-regular {
+    font-family: 'Jacquard 12', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Libre Barcode 39 Text: CSS class */
+
+.libre-barcode-39-text-regular {
+    font-family: 'Libre Barcode 39 Text', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* MuseoModerno: CSS class for a variable style */
+/* // <weight>: Use a value from 100 to 900 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.museomoderno-400 {
+    font-family: 'MuseoModerno', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Noto Sans: CSS class for a variable style */
+/* // <weight>: Use a value from 100 to 900 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.noto-sans-400 {
+    font-family: 'Noto Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+/* Oxygen Mono: CSS class */
+
+.oxygen-mono-regular {
+    font-family: 'Oxygen Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Roboto: CSS class for a variable style */
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.roboto-400 {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+/* Sono: CSS class for a variable style */
+/* // <weight>: Use a value from 200 to 800 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.sono-400 {
+    font-family: 'Sono', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'MONO' 1;
+}
+
+/* Turret Road: CSS classes  */
+
+.turret-road-extralight {
+    font-family: 'Turret Road', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.turret-road-light {
+    font-family: 'Turret Road', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.turret-road-regular {
+    font-family: 'Turret Road', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.turret-road-medium {
+    font-family: 'Turret Road', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.turret-road-bold {
+    font-family: 'Turret Road', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.turret-road-extrabold {
+    font-family: 'Turret Road', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Ubuntu: CSS classes */
+
+.ubuntu-light {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-light-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ubuntu-regular-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-medium-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ubuntu-bold-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Anonymous Pro: CSS classes */
+
+.anonymous-pro-regular {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anonymous-pro-bold {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.anonymous-pro-regular-italic {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.anonymous-pro-bold-italic {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Geologica: CSS class for a variable style */
+
+/* // <weight>: Use a value from 100 to 900 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.geologica-500 {
+    font-family: 'Geologica', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'slnt' 0, 'CRSV' 0, 'SHRP' 0;
+}
+
+/* Victor Mono: CSS class for a variable style */
+
+/* // <weight>: Use a value from 100 to 700 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.victor-mono-500 {
+    font-family: 'Victor Mono', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Syne Mono: CSS class */
+
+.syne-mono-regular {
+    font-family: 'Syne Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Lekton: CSS classes */
+
+.lekton-regular {
+    font-family: 'Lekton', monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lekton-bold {
+    font-family: 'Lekton', monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lekton-regular-italic {
+    font-family: 'Lekton', monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* DM Mono: CSS classes */
+
+.dm-mono-light {
+    font-family: 'DM Mono', monospace;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.dm-mono-regular {
+    font-family: 'DM Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-mono-medium {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dm-mono-light-italic {
+    font-family: 'DM Mono', monospace;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.dm-mono-regular-italic {
+    font-family: 'DM Mono', monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.dm-mono-medium-italic {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Ubuntu Mono: CSS classes */
+
+.ubuntu-mono-regular {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-mono-bold {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-mono-regular-italic {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-mono-bold-italic {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-mono-400 {
+    font-family: 'Roboto Mono', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+* {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.800rem;
+    font-family: 'Lusitana', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+} 
+*/

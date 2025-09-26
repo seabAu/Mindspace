@@ -1,0 +1,254 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #688FF1;
+    height: 100%;
+    min-height: 755px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #FFFFFF;
+    width: 350px;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 1.25em;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+.fa-style {
+    font-size: 50px;
+    color: #c0c1c2;
+    margin-bottom: 7px;
+    transform: translateY(0%);
+    transition: all 0.3s ease;
+}
+
+.spinner-style {
+    font-size: 30px;
+    color: #c0c1c2;
+}
+
+#files {
+    max-height: 361px;
+    overflow-y: auto;
+}
+
+.drop-it-upload {
+    margin: 25px auto 0;
+    padding: 50px 0;
+    width: 100%;
+    outline: 3px dashed #ececec;
+    border-radius: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+.drop-it-upload .loader {
+    display: none;
+}
+.drop-it-upload.uploading .loader {
+    display: block;
+}
+.drop-it-upload.uploading .default {
+    display: none;
+}
+.drop-it-upload.active {
+    border-color: #fff;
+}
+.drop-it-upload:hover {
+    outline: 3px dashed #B6B6B6;
+    background-color: #e8f0f2;
+    color: black;
+}
+.drop-it-upload:hover .fa-style {
+    transform: translateY(-10%);
+}
+
+.drop-it-input {
+    position: absolute;
+    top: -999999px;
+}
+
+.bold {
+    font-weight: bold;
+    color: #6384d4;
+}
+@-webkit-keyframes flip {
+    0% {
+        background: #fff;
+    }
+    100% {
+        background: #e8f0f2;
+    }
+}
+@keyframes flip {
+    0% {
+        background: #fff;
+    }
+    100% {
+        background: #e8f0f2;
+    }
+}
+.batch {
+    background: #ffffff;
+}
+.file--container {
+    display: flex;
+    flex-direction: row;
+    min-height: 75px;
+    margin-bottom: 15px;
+    margin-right: 8px;
+}
+.file--icons {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.file--content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    justify-content: space-evenly;
+}
+.file--content-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.file--content-flex--name {
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+}
+.file--content-flex--uploaded {
+    display: flex;
+    align-items: center;
+    color: #EF655C;
+    margin: 0 10px;
+}
+.file--progressBar {
+    background-color: #FDE0DF;
+    border-radius: 2px;
+    width: 100%;
+}
+.file--progressBar div {
+    background-color: #EF655C;
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #B6B6B6 #ececec;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ececec;
+    border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #B6B6B6;
+    border-radius: 2px;
+}
+
+.file-icon {
+    height: 65px;
+}
+
+.file-icon--pdf .file-icon__shadow {
+    fill: #f9e3da;
+}
+.file-icon--pdf .file-icon__outline,
+.file-icon--pdf .file-icon__type {
+    fill: #ed665f;
+}
+
+.file-icon--doc .file-icon__shadow {
+    fill: #e8f0f8;
+}
+.file-icon--doc .file-icon__outline,
+.file-icon--doc .file-icon__type {
+    fill: #4585c7;
+}
+
+.file-icon--xls .file-icon__shadow {
+    fill: #e0f1e6;
+}
+.file-icon--xls .file-icon__outline,
+.file-icon--xls .file-icon__type {
+    fill: #6cc08a;
+}
+
+.file-icon--psd .file-icon__shadow {
+    fill: #e8f0f8;
+}
+.file-icon--psd .file-icon__outline,
+.file-icon--psd .file-icon__type {
+    fill: #4585c7;
+}
+
+.file-icon--ai .file-icon__shadow {
+    fill: #f3e9d8;
+}
+.file-icon--ai .file-icon__outline,
+.file-icon--ai .file-icon__type {
+    fill: #ed9b5f;
+}
+
+.file-icon--png .file-icon__shadow {
+    fill: #fbf3db;
+}
+.file-icon--png .file-icon__outline,
+.file-icon--png .file-icon__type {
+    fill: #edca5f;
+}
+
+.file-icon--jpg .file-icon__shadow {
+    fill: #f1e4f6;
+}
+.file-icon--jpg .file-icon__outline,
+.file-icon--jpg .file-icon__type {
+    fill: #b276c8;
+}
+
+.file-icon--unknown .file-icon__shadow {
+    fill: #e6e8ef;
+}
+.file-icon--unknown .file-icon__outline,
+.file-icon--unknown .file-icon__type {
+    fill: #afb4bc;
+}

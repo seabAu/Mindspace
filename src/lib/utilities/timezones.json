@@ -1,0 +1,1726 @@
+[
+    {
+      "friendlyName": "Greenwich Mean Time",
+      "offsetString": "GMT",
+      "offsetNumeric": 0,
+      "longTimezones": [
+        "Africa/Abidjan",
+        "Africa/Accra",
+        "Africa/Bamako",
+        "Africa/Banjul",
+        "Africa/Bissau",
+        "Africa/Conakry",
+        "Africa/Dakar",
+        "Africa/Freetown",
+        "Africa/Lome",
+        "Africa/Monrovia",
+        "Africa/Nouakchott",
+        "Africa/Ouagadougou",
+        "Africa/Sao_Tome",
+        "America/Danmarkshavn",
+        "Atlantic/Reykjavik",
+        "Atlantic/St_Helena"
+      ]
+    },
+    {
+      "friendlyName": "East Africa Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Africa/Addis_Ababa",
+        "Africa/Asmera",
+        "Africa/Dar_es_Salaam",
+        "Africa/Djibouti",
+        "Africa/Kampala",
+        "Africa/Mogadishu",
+        "Africa/Nairobi",
+        "Indian/Antananarivo",
+        "Indian/Comoro",
+        "Indian/Mayotte"
+      ]
+    },
+    {
+      "friendlyName": "Central European Standard Time",
+      "offsetString": "GMT+01:00",
+      "offsetNumeric": 60,
+      "longTimezones": [
+        "Africa/Algiers",
+        "Africa/Tunis"
+      ]
+    },
+    {
+      "friendlyName": "West Africa Standard Time",
+      "offsetString": "GMT+01:00",
+      "offsetNumeric": 60,
+      "longTimezones": [
+        "Africa/Bangui",
+        "Africa/Brazzaville",
+        "Africa/Douala",
+        "Africa/Kinshasa",
+        "Africa/Lagos",
+        "Africa/Libreville",
+        "Africa/Luanda",
+        "Africa/Malabo",
+        "Africa/Ndjamena",
+        "Africa/Niamey",
+        "Africa/Porto-Novo"
+      ]
+    },
+    {
+      "friendlyName": "Central Africa Time",
+      "offsetString": "GMT+02:00",
+      "offsetNumeric": 120,
+      "longTimezones": [
+        "Africa/Blantyre",
+        "Africa/Bujumbura",
+        "Africa/Gaborone",
+        "Africa/Harare",
+        "Africa/Juba",
+        "Africa/Khartoum",
+        "Africa/Kigali",
+        "Africa/Lubumbashi",
+        "Africa/Lusaka",
+        "Africa/Maputo",
+        "Africa/Windhoek"
+      ]
+    },
+    {
+      "friendlyName": "Eastern European Standard Time",
+      "offsetString": "GMT+02:00",
+      "offsetNumeric": 120,
+      "longTimezones": [
+        "Africa/Cairo",
+        "Africa/Tripoli",
+        "Europe/Kaliningrad"
+      ]
+    },
+    {
+      "friendlyName": "Morocco Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Africa/Casablanca"
+      ]
+    },
+    {
+      "friendlyName": "Central European Time",
+      "offsetString": "GMT+01:00",
+      "offsetNumeric": 60,
+      "longTimezones": [
+        "Africa/Ceuta",
+        "Arctic/Longyearbyen",
+        "Europe/Amsterdam",
+        "Europe/Andorra",
+        "Europe/Belgrade",
+        "Europe/Berlin",
+        "Europe/Bratislava",
+        "Europe/Brussels",
+        "Europe/Budapest",
+        "Europe/Busingen",
+        "Europe/Copenhagen",
+        "Europe/Gibraltar",
+        "Europe/Ljubljana",
+        "Europe/Luxembourg",
+        "Europe/Madrid",
+        "Europe/Malta",
+        "Europe/Monaco",
+        "Europe/Oslo",
+        "Europe/Paris",
+        "Europe/Podgorica",
+        "Europe/Prague",
+        "Europe/Rome",
+        "Europe/San_Marino",
+        "Europe/Sarajevo",
+        "Europe/Skopje",
+        "Europe/Stockholm",
+        "Europe/Tirane",
+        "Europe/Vaduz",
+        "Europe/Vatican",
+        "Europe/Vienna",
+        "Europe/Warsaw",
+        "Europe/Zagreb",
+        "Europe/Zurich"
+      ]
+    },
+    {
+      "friendlyName": "Western Sahara Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Africa/El_Aaiun"
+      ]
+    },
+    {
+      "friendlyName": "South Africa Standard Time",
+      "offsetString": "GMT+02:00",
+      "offsetNumeric": 120,
+      "longTimezones": [
+        "Africa/Johannesburg",
+        "Africa/Maseru",
+        "Africa/Mbabane"
+      ]
+    },
+    {
+      "friendlyName": "Hawaii-Aleutian Time (Adak)",
+      "offsetString": "GMT-09:00",
+      "offsetNumeric": -540,
+      "longTimezones": [
+        "America/Adak"
+      ]
+    },
+    {
+      "friendlyName": "Alaska Time",
+      "offsetString": "GMT-08:00",
+      "offsetNumeric": -480,
+      "longTimezones": [
+        "America/Anchorage",
+        "America/Juneau",
+        "America/Metlakatla",
+        "America/Nome",
+        "America/Sitka",
+        "America/Yakutat"
+      ]
+    },
+    {
+      "friendlyName": "Atlantic Standard Time",
+      "offsetString": "GMT-04:00",
+      "offsetNumeric": -240,
+      "longTimezones": [
+        "America/Anguilla",
+        "America/Antigua",
+        "America/Aruba",
+        "America/Barbados",
+        "America/Blanc-Sablon",
+        "America/Curacao",
+        "America/Dominica",
+        "America/Grenada",
+        "America/Guadeloupe",
+        "America/Kralendijk",
+        "America/Lower_Princes",
+        "America/Marigot",
+        "America/Martinique",
+        "America/Montserrat",
+        "America/Port_of_Spain",
+        "America/Puerto_Rico",
+        "America/Santo_Domingo",
+        "America/St_Barthelemy",
+        "America/St_Kitts",
+        "America/St_Lucia",
+        "America/St_Thomas",
+        "America/St_Vincent",
+        "America/Tortola"
+      ]
+    },
+    {
+      "friendlyName": "Brasilia Standard Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Araguaina",
+        "America/Bahia",
+        "America/Belem",
+        "America/Fortaleza",
+        "America/Maceio",
+        "America/Recife",
+        "America/Santarem",
+        "America/Sao_Paulo"
+      ]
+    },
+    {
+      "friendlyName": "Argentina Standard Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Argentina/La_Rioja",
+        "America/Argentina/Rio_Gallegos",
+        "America/Argentina/Salta",
+        "America/Argentina/San_Juan",
+        "America/Argentina/San_Luis",
+        "America/Argentina/Tucuman",
+        "America/Argentina/Ushuaia",
+        "America/Buenos_Aires",
+        "America/Catamarca",
+        "America/Cordoba",
+        "America/Jujuy",
+        "America/Mendoza"
+      ]
+    },
+    {
+      "friendlyName": "Paraguay Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Asuncion"
+      ]
+    },
+    {
+      "friendlyName": "Central Time (Bahia Banderas)",
+      "offsetString": "GMT-06:00",
+      "offsetNumeric": -360,
+      "longTimezones": [
+        "America/Bahia_Banderas"
+      ]
+    },
+    {
+      "friendlyName": "Central Standard Time",
+      "offsetString": "GMT-06:00",
+      "offsetNumeric": -360,
+      "longTimezones": [
+        "America/Belize",
+        "America/Costa_Rica",
+        "America/El_Salvador",
+        "America/Guatemala",
+        "America/Managua",
+        "America/Regina",
+        "America/Swift_Current",
+        "America/Tegucigalpa"
+      ]
+    },
+    {
+      "friendlyName": "Amazon Standard Time",
+      "offsetString": "GMT-04:00",
+      "offsetNumeric": -240,
+      "longTimezones": [
+        "America/Boa_Vista",
+        "America/Campo_Grande",
+        "America/Cuiaba",
+        "America/Manaus",
+        "America/Porto_Velho"
+      ]
+    },
+    {
+      "friendlyName": "Colombia Standard Time",
+      "offsetString": "GMT-05:00",
+      "offsetNumeric": -300,
+      "longTimezones": [
+        "America/Bogota"
+      ]
+    },
+    {
+      "friendlyName": "Mountain Time",
+      "offsetString": "GMT-06:00",
+      "offsetNumeric": -360,
+      "longTimezones": [
+        "America/Boise",
+        "America/Cambridge_Bay",
+        "America/Ciudad_Juarez",
+        "America/Denver",
+        "America/Edmonton",
+        "America/Inuvik",
+        "America/Yellowknife"
+      ]
+    },
+    {
+      "friendlyName": "Eastern Standard Time",
+      "offsetString": "GMT-05:00",
+      "offsetNumeric": -300,
+      "longTimezones": [
+        "America/Cancun",
+        "America/Cayman",
+        "America/Coral_Harbour",
+        "America/Jamaica",
+        "America/Panama"
+      ]
+    },
+    {
+      "friendlyName": "Venezuela Time",
+      "offsetString": "GMT-04:00",
+      "offsetNumeric": -240,
+      "longTimezones": [
+        "America/Caracas"
+      ]
+    },
+    {
+      "friendlyName": "French Guiana Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Cayenne"
+      ]
+    },
+    {
+      "friendlyName": "Central Time",
+      "offsetString": "GMT-05:00",
+      "offsetNumeric": -300,
+      "longTimezones": [
+        "America/Chicago",
+        "America/Indiana/Knox",
+        "America/Indiana/Tell_City",
+        "America/Matamoros",
+        "America/Menominee",
+        "America/North_Dakota/Beulah",
+        "America/North_Dakota/Center",
+        "America/North_Dakota/New_Salem",
+        "America/Ojinaga",
+        "America/Rainy_River",
+        "America/Rankin_Inlet",
+        "America/Resolute",
+        "America/Winnipeg"
+      ]
+    },
+    {
+      "friendlyName": "Central Time (Chihuahua)",
+      "offsetString": "GMT-06:00",
+      "offsetNumeric": -360,
+      "longTimezones": [
+        "America/Chihuahua"
+      ]
+    },
+    {
+      "friendlyName": "Mountain Standard Time",
+      "offsetString": "GMT-07:00",
+      "offsetNumeric": -420,
+      "longTimezones": [
+        "America/Creston",
+        "America/Dawson_Creek",
+        "America/Fort_Nelson",
+        "America/Phoenix"
+      ]
+    },
+    {
+      "friendlyName": "Yukon Time",
+      "offsetString": "GMT-07:00",
+      "offsetNumeric": -420,
+      "longTimezones": [
+        "America/Dawson",
+        "America/Whitehorse"
+      ]
+    },
+    {
+      "friendlyName": "Eastern Time",
+      "offsetString": "GMT-04:00",
+      "offsetNumeric": -240,
+      "longTimezones": [
+        "America/Detroit",
+        "America/Grand_Turk",
+        "America/Indiana/Marengo",
+        "America/Indiana/Petersburg",
+        "America/Indiana/Vevay",
+        "America/Indiana/Vincennes",
+        "America/Indiana/Winamac",
+        "America/Indianapolis",
+        "America/Iqaluit",
+        "America/Kentucky/Monticello",
+        "America/Louisville",
+        "America/Nassau",
+        "America/New_York",
+        "America/Nipigon",
+        "America/Pangnirtung",
+        "America/Port-au-Prince",
+        "America/Thunder_Bay",
+        "America/Toronto"
+      ]
+    },
+    {
+      "friendlyName": "Acre Standard Time",
+      "offsetString": "GMT-05:00",
+      "offsetNumeric": -300,
+      "longTimezones": [
+        "America/Eirunepe",
+        "America/Rio_Branco"
+      ]
+    },
+    {
+      "friendlyName": "Atlantic Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Glace_Bay",
+        "America/Goose_Bay",
+        "America/Halifax",
+        "America/Moncton",
+        "America/Thule",
+        "Atlantic/Bermuda"
+      ]
+    },
+    {
+      "friendlyName": "West Greenland Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Godthab"
+      ]
+    },
+    {
+      "friendlyName": "Ecuador Time",
+      "offsetString": "GMT-05:00",
+      "offsetNumeric": -300,
+      "longTimezones": [
+        "America/Guayaquil"
+      ]
+    },
+    {
+      "friendlyName": "Guyana Time",
+      "offsetString": "GMT-04:00",
+      "offsetNumeric": -240,
+      "longTimezones": [
+        "America/Guyana"
+      ]
+    },
+    {
+      "friendlyName": "Cuba Time",
+      "offsetString": "GMT-04:00",
+      "offsetNumeric": -240,
+      "longTimezones": [
+        "America/Havana"
+      ]
+    },
+    {
+      "friendlyName": "Mexican Pacific Standard Time",
+      "offsetString": "GMT-07:00",
+      "offsetNumeric": -420,
+      "longTimezones": [
+        "America/Hermosillo"
+      ]
+    },
+    {
+      "friendlyName": "Bolivia Time",
+      "offsetString": "GMT-04:00",
+      "offsetNumeric": -240,
+      "longTimezones": [
+        "America/La_Paz"
+      ]
+    },
+    {
+      "friendlyName": "Peru Standard Time",
+      "offsetString": "GMT-05:00",
+      "offsetNumeric": -300,
+      "longTimezones": [
+        "America/Lima"
+      ]
+    },
+    {
+      "friendlyName": "Pacific Time",
+      "offsetString": "GMT-07:00",
+      "offsetNumeric": -420,
+      "longTimezones": [
+        "America/Los_Angeles",
+        "America/Tijuana",
+        "America/Vancouver"
+      ]
+    },
+    {
+      "friendlyName": "Mexican Pacific Time",
+      "offsetString": "GMT-07:00",
+      "offsetNumeric": -420,
+      "longTimezones": [
+        "America/Mazatlan"
+      ]
+    },
+    {
+      "friendlyName": "Central Time (Merida)",
+      "offsetString": "GMT-06:00",
+      "offsetNumeric": -360,
+      "longTimezones": [
+        "America/Merida"
+      ]
+    },
+    {
+      "friendlyName": "Central Time (Mexico)",
+      "offsetString": "GMT-06:00",
+      "offsetNumeric": -360,
+      "longTimezones": [
+        "America/Mexico_City"
+      ]
+    },
+    {
+      "friendlyName": "St. Pierre & Miquelon Time",
+      "offsetString": "GMT-02:00",
+      "offsetNumeric": -120,
+      "longTimezones": [
+        "America/Miquelon"
+      ]
+    },
+    {
+      "friendlyName": "Central Time (Monterrey)",
+      "offsetString": "GMT-06:00",
+      "offsetNumeric": -360,
+      "longTimezones": [
+        "America/Monterrey"
+      ]
+    },
+    {
+      "friendlyName": "Uruguay Standard Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Montevideo"
+      ]
+    },
+    {
+      "friendlyName": "Montreal Time",
+      "offsetString": "GMT-04:00",
+      "offsetNumeric": -240,
+      "longTimezones": [
+        "America/Montreal"
+      ]
+    },
+    {
+      "friendlyName": "Fernando de Noronha Standard Time",
+      "offsetString": "GMT-02:00",
+      "offsetNumeric": -120,
+      "longTimezones": [
+        "America/Noronha"
+      ]
+    },
+    {
+      "friendlyName": "Suriname Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Paramaribo"
+      ]
+    },
+    {
+      "friendlyName": "Punta Arenas Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Punta_Arenas"
+      ]
+    },
+    {
+      "friendlyName": "Northwest Mexico Time",
+      "offsetString": "GMT-07:00",
+      "offsetNumeric": -420,
+      "longTimezones": [
+        "America/Santa_Isabel"
+      ]
+    },
+    {
+      "friendlyName": "Chile Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "America/Santiago"
+      ]
+    },
+    {
+      "friendlyName": "East Greenland Time",
+      "offsetString": "GMT-01:00",
+      "offsetNumeric": -60,
+      "longTimezones": [
+        "America/Scoresbysund"
+      ]
+    },
+    {
+      "friendlyName": "Newfoundland Time",
+      "offsetString": "GMT-02:30",
+      "offsetNumeric": -150,
+      "longTimezones": [
+        "America/St_Johns"
+      ]
+    },
+    {
+      "friendlyName": "Casey Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Antarctica/Casey"
+      ]
+    },
+    {
+      "friendlyName": "Davis Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Antarctica/Davis"
+      ]
+    },
+    {
+      "friendlyName": "Dumont-d’Urville Time",
+      "offsetString": "GMT+10:00",
+      "offsetNumeric": 600,
+      "longTimezones": [
+        "Antarctica/DumontDUrville"
+      ]
+    },
+    {
+      "friendlyName": "Eastern Australia Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Antarctica/Macquarie",
+        "Australia/Currie",
+        "Australia/Hobart",
+        "Australia/Melbourne",
+        "Australia/Sydney"
+      ]
+    },
+    {
+      "friendlyName": "Mawson Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Antarctica/Mawson"
+      ]
+    },
+    {
+      "friendlyName": "New Zealand Time",
+      "offsetString": "GMT+13:00",
+      "offsetNumeric": 780,
+      "longTimezones": [
+        "Antarctica/McMurdo",
+        "Pacific/Auckland"
+      ]
+    },
+    {
+      "friendlyName": "Palmer Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "Antarctica/Palmer"
+      ]
+    },
+    {
+      "friendlyName": "Rothera Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "Antarctica/Rothera"
+      ]
+    },
+    {
+      "friendlyName": "Syowa Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Antarctica/Syowa"
+      ]
+    },
+    {
+      "friendlyName": "Troll Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Antarctica/Troll"
+      ]
+    },
+    {
+      "friendlyName": "Vostok Time",
+      "offsetString": "GMT+06:00",
+      "offsetNumeric": 360,
+      "longTimezones": [
+        "Antarctica/Vostok"
+      ]
+    },
+    {
+      "friendlyName": "Arabian Standard Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Asia/Aden",
+        "Asia/Baghdad",
+        "Asia/Bahrain",
+        "Asia/Kuwait",
+        "Asia/Qatar",
+        "Asia/Riyadh"
+      ]
+    },
+    {
+      "friendlyName": "East Kazakhstan Time",
+      "offsetString": "GMT+06:00",
+      "offsetNumeric": 360,
+      "longTimezones": [
+        "Asia/Almaty",
+        "Asia/Qostanay"
+      ]
+    },
+    {
+      "friendlyName": "Jordan Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Asia/Amman"
+      ]
+    },
+    {
+      "friendlyName": "Anadyr Standard Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Asia/Anadyr"
+      ]
+    },
+    {
+      "friendlyName": "West Kazakhstan Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Asia/Aqtau",
+        "Asia/Aqtobe",
+        "Asia/Atyrau",
+        "Asia/Oral",
+        "Asia/Qyzylorda"
+      ]
+    },
+    {
+      "friendlyName": "Turkmenistan Standard Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Asia/Ashgabat"
+      ]
+    },
+    {
+      "friendlyName": "Azerbaijan Standard Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Asia/Baku"
+      ]
+    },
+    {
+      "friendlyName": "Indochina Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Asia/Bangkok",
+        "Asia/Phnom_Penh",
+        "Asia/Saigon",
+        "Asia/Vientiane"
+      ]
+    },
+    {
+      "friendlyName": "Barnaul Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Asia/Barnaul"
+      ]
+    },
+    {
+      "friendlyName": "Eastern European Time",
+      "offsetString": "GMT+02:00",
+      "offsetNumeric": 120,
+      "longTimezones": [
+        "Asia/Beirut",
+        "Asia/Gaza",
+        "Asia/Hebron",
+        "Asia/Nicosia",
+        "Europe/Athens",
+        "Europe/Bucharest",
+        "Europe/Chisinau",
+        "Europe/Helsinki",
+        "Europe/Kiev",
+        "Europe/Mariehamn",
+        "Europe/Riga",
+        "Europe/Sofia",
+        "Europe/Tallinn",
+        "Europe/Uzhgorod",
+        "Europe/Vilnius",
+        "Europe/Zaporozhye"
+      ]
+    },
+    {
+      "friendlyName": "Kyrgyzstan Time",
+      "offsetString": "GMT+06:00",
+      "offsetNumeric": 360,
+      "longTimezones": [
+        "Asia/Bishkek"
+      ]
+    },
+    {
+      "friendlyName": "Brunei Darussalam Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Brunei"
+      ]
+    },
+    {
+      "friendlyName": "India Standard Time",
+      "offsetString": "GMT+05:30",
+      "offsetNumeric": 330,
+      "longTimezones": [
+        "Asia/Calcutta",
+        "Asia/Colombo"
+      ]
+    },
+    {
+      "friendlyName": "Yakutsk Standard Time",
+      "offsetString": "GMT+09:00",
+      "offsetNumeric": 540,
+      "longTimezones": [
+        "Asia/Chita",
+        "Asia/Khandyga",
+        "Asia/Yakutsk"
+      ]
+    },
+    {
+      "friendlyName": "Ulaanbaatar Standard Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Choibalsan",
+        "Asia/Ulaanbaatar"
+      ]
+    },
+    {
+      "friendlyName": "Syria Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Asia/Damascus"
+      ]
+    },
+    {
+      "friendlyName": "Bangladesh Standard Time",
+      "offsetString": "GMT+06:00",
+      "offsetNumeric": 360,
+      "longTimezones": [
+        "Asia/Dhaka"
+      ]
+    },
+    {
+      "friendlyName": "East Timor Time",
+      "offsetString": "GMT+09:00",
+      "offsetNumeric": 540,
+      "longTimezones": [
+        "Asia/Dili"
+      ]
+    },
+    {
+      "friendlyName": "Gulf Standard Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Asia/Dubai",
+        "Asia/Muscat"
+      ]
+    },
+    {
+      "friendlyName": "Tajikistan Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Asia/Dushanbe"
+      ]
+    },
+    {
+      "friendlyName": "Famagusta Time",
+      "offsetString": "GMT+02:00",
+      "offsetNumeric": 120,
+      "longTimezones": [
+        "Asia/Famagusta"
+      ]
+    },
+    {
+      "friendlyName": "Hong Kong Standard Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Hong_Kong"
+      ]
+    },
+    {
+      "friendlyName": "Hovd Standard Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Asia/Hovd"
+      ]
+    },
+    {
+      "friendlyName": "Irkutsk Standard Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Irkutsk"
+      ]
+    },
+    {
+      "friendlyName": "Western Indonesia Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Asia/Jakarta",
+        "Asia/Pontianak"
+      ]
+    },
+    {
+      "friendlyName": "Eastern Indonesia Time",
+      "offsetString": "GMT+09:00",
+      "offsetNumeric": 540,
+      "longTimezones": [
+        "Asia/Jayapura"
+      ]
+    },
+    {
+      "friendlyName": "Israel Time",
+      "offsetString": "GMT+02:00",
+      "offsetNumeric": 120,
+      "longTimezones": [
+        "Asia/Jerusalem"
+      ]
+    },
+    {
+      "friendlyName": "Afghanistan Time",
+      "offsetString": "GMT+04:30",
+      "offsetNumeric": 270,
+      "longTimezones": [
+        "Asia/Kabul"
+      ]
+    },
+    {
+      "friendlyName": "Petropavlovsk-Kamchatski Standard Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Asia/Kamchatka"
+      ]
+    },
+    {
+      "friendlyName": "Pakistan Standard Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Asia/Karachi"
+      ]
+    },
+    {
+      "friendlyName": "Nepal Time",
+      "offsetString": "GMT+05:45",
+      "offsetNumeric": 345,
+      "longTimezones": [
+        "Asia/Katmandu"
+      ]
+    },
+    {
+      "friendlyName": "Krasnoyarsk Standard Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Asia/Krasnoyarsk",
+        "Asia/Novokuznetsk"
+      ]
+    },
+    {
+      "friendlyName": "Malaysia Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Kuala_Lumpur",
+        "Asia/Kuching"
+      ]
+    },
+    {
+      "friendlyName": "China Standard Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Macau",
+        "Asia/Shanghai"
+      ]
+    },
+    {
+      "friendlyName": "Magadan Standard Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Asia/Magadan"
+      ]
+    },
+    {
+      "friendlyName": "Central Indonesia Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Makassar"
+      ]
+    },
+    {
+      "friendlyName": "Philippine Standard Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Manila"
+      ]
+    },
+    {
+      "friendlyName": "Novosibirsk Standard Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Asia/Novosibirsk"
+      ]
+    },
+    {
+      "friendlyName": "Omsk Standard Time",
+      "offsetString": "GMT+06:00",
+      "offsetNumeric": 360,
+      "longTimezones": [
+        "Asia/Omsk"
+      ]
+    },
+    {
+      "friendlyName": "Korean Standard Time",
+      "offsetString": "GMT+09:00",
+      "offsetNumeric": 540,
+      "longTimezones": [
+        "Asia/Pyongyang",
+        "Asia/Seoul"
+      ]
+    },
+    {
+      "friendlyName": "Myanmar Time",
+      "offsetString": "GMT+06:30",
+      "offsetNumeric": 390,
+      "longTimezones": [
+        "Asia/Rangoon"
+      ]
+    },
+    {
+      "friendlyName": "Sakhalin Standard Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Asia/Sakhalin"
+      ]
+    },
+    {
+      "friendlyName": "Uzbekistan Standard Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Asia/Samarkand",
+        "Asia/Tashkent"
+      ]
+    },
+    {
+      "friendlyName": "Singapore Standard Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Singapore"
+      ]
+    },
+    {
+      "friendlyName": "Srednekolymsk Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Asia/Srednekolymsk"
+      ]
+    },
+    {
+      "friendlyName": "Taipei Standard Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Asia/Taipei"
+      ]
+    },
+    {
+      "friendlyName": "Georgia Standard Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Asia/Tbilisi"
+      ]
+    },
+    {
+      "friendlyName": "Iran Time",
+      "offsetString": "GMT+03:30",
+      "offsetNumeric": 210,
+      "longTimezones": [
+        "Asia/Tehran"
+      ]
+    },
+    {
+      "friendlyName": "Bhutan Time",
+      "offsetString": "GMT+06:00",
+      "offsetNumeric": 360,
+      "longTimezones": [
+        "Asia/Thimphu"
+      ]
+    },
+    {
+      "friendlyName": "Japan Standard Time",
+      "offsetString": "GMT+09:00",
+      "offsetNumeric": 540,
+      "longTimezones": [
+        "Asia/Tokyo"
+      ]
+    },
+    {
+      "friendlyName": "Tomsk Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Asia/Tomsk"
+      ]
+    },
+    {
+      "friendlyName": "Urumqi Time",
+      "offsetString": "GMT+06:00",
+      "offsetNumeric": 360,
+      "longTimezones": [
+        "Asia/Urumqi"
+      ]
+    },
+    {
+      "friendlyName": "Vladivostok Standard Time",
+      "offsetString": "GMT+10:00",
+      "offsetNumeric": 600,
+      "longTimezones": [
+        "Asia/Ust-Nera",
+        "Asia/Vladivostok"
+      ]
+    },
+    {
+      "friendlyName": "Yekaterinburg Standard Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Asia/Yekaterinburg"
+      ]
+    },
+    {
+      "friendlyName": "Armenia Standard Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Asia/Yerevan"
+      ]
+    },
+    {
+      "friendlyName": "Azores Time",
+      "offsetString": "GMT-01:00",
+      "offsetNumeric": -60,
+      "longTimezones": [
+        "Atlantic/Azores"
+      ]
+    },
+    {
+      "friendlyName": "Western European Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Atlantic/Canary",
+        "Atlantic/Faeroe",
+        "Atlantic/Madeira",
+        "Europe/Lisbon"
+      ]
+    },
+    {
+      "friendlyName": "Cape Verde Standard Time",
+      "offsetString": "GMT-01:00",
+      "offsetNumeric": -60,
+      "longTimezones": [
+        "Atlantic/Cape_Verde"
+      ]
+    },
+    {
+      "friendlyName": "South Georgia Time",
+      "offsetString": "GMT-02:00",
+      "offsetNumeric": -120,
+      "longTimezones": [
+        "Atlantic/South_Georgia"
+      ]
+    },
+    {
+      "friendlyName": "Falkland Islands Standard Time",
+      "offsetString": "GMT-03:00",
+      "offsetNumeric": -180,
+      "longTimezones": [
+        "Atlantic/Stanley"
+      ]
+    },
+    {
+      "friendlyName": "Central Australia Time",
+      "offsetString": "GMT+10:30",
+      "offsetNumeric": 630,
+      "longTimezones": [
+        "Australia/Adelaide",
+        "Australia/Broken_Hill"
+      ]
+    },
+    {
+      "friendlyName": "Australian Eastern Standard Time",
+      "offsetString": "GMT+10:00",
+      "offsetNumeric": 600,
+      "longTimezones": [
+        "Australia/Brisbane",
+        "Australia/Lindeman"
+      ]
+    },
+    {
+      "friendlyName": "Australian Central Standard Time",
+      "offsetString": "GMT+09:30",
+      "offsetNumeric": 570,
+      "longTimezones": [
+        "Australia/Darwin"
+      ]
+    },
+    {
+      "friendlyName": "Australian Central Western Standard Time",
+      "offsetString": "GMT+08:45",
+      "offsetNumeric": 525,
+      "longTimezones": [
+        "Australia/Eucla"
+      ]
+    },
+    {
+      "friendlyName": "Lord Howe Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Australia/Lord_Howe"
+      ]
+    },
+    {
+      "friendlyName": "Australian Western Standard Time",
+      "offsetString": "GMT+08:00",
+      "offsetNumeric": 480,
+      "longTimezones": [
+        "Australia/Perth"
+      ]
+    },
+    {
+      "friendlyName": "Astrakhan Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Europe/Astrakhan"
+      ]
+    },
+    {
+      "friendlyName": "Ireland Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Europe/Dublin"
+      ]
+    },
+    {
+      "friendlyName": "Guernsey Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Europe/Guernsey"
+      ]
+    },
+    {
+      "friendlyName": "Isle of Man Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Europe/Isle_of_Man"
+      ]
+    },
+    {
+      "friendlyName": "Turkey Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Europe/Istanbul"
+      ]
+    },
+    {
+      "friendlyName": "Jersey Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Europe/Jersey"
+      ]
+    },
+    {
+      "friendlyName": "Kirov Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Europe/Kirov"
+      ]
+    },
+    {
+      "friendlyName": "United Kingdom Time",
+      "offsetString": "GMT",
+      "offsetNumeric": null,
+      "longTimezones": [
+        "Europe/London"
+      ]
+    },
+    {
+      "friendlyName": "Moscow Standard Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Europe/Minsk",
+        "Europe/Moscow",
+        "Europe/Simferopol"
+      ]
+    },
+    {
+      "friendlyName": "Samara Standard Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Europe/Samara"
+      ]
+    },
+    {
+      "friendlyName": "Saratov Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Europe/Saratov"
+      ]
+    },
+    {
+      "friendlyName": "Ulyanovsk Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Europe/Ulyanovsk"
+      ]
+    },
+    {
+      "friendlyName": "Volgograd Standard Time",
+      "offsetString": "GMT+03:00",
+      "offsetNumeric": 180,
+      "longTimezones": [
+        "Europe/Volgograd"
+      ]
+    },
+    {
+      "friendlyName": "Indian Ocean Time",
+      "offsetString": "GMT+06:00",
+      "offsetNumeric": 360,
+      "longTimezones": [
+        "Indian/Chagos"
+      ]
+    },
+    {
+      "friendlyName": "Christmas Island Time",
+      "offsetString": "GMT+07:00",
+      "offsetNumeric": 420,
+      "longTimezones": [
+        "Indian/Christmas"
+      ]
+    },
+    {
+      "friendlyName": "Cocos Islands Time",
+      "offsetString": "GMT+06:30",
+      "offsetNumeric": 390,
+      "longTimezones": [
+        "Indian/Cocos"
+      ]
+    },
+    {
+      "friendlyName": "French Southern & Antarctic Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Indian/Kerguelen"
+      ]
+    },
+    {
+      "friendlyName": "Seychelles Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Indian/Mahe"
+      ]
+    },
+    {
+      "friendlyName": "Maldives Time",
+      "offsetString": "GMT+05:00",
+      "offsetNumeric": 300,
+      "longTimezones": [
+        "Indian/Maldives"
+      ]
+    },
+    {
+      "friendlyName": "Mauritius Standard Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Indian/Mauritius"
+      ]
+    },
+    {
+      "friendlyName": "Réunion Time",
+      "offsetString": "GMT+04:00",
+      "offsetNumeric": 240,
+      "longTimezones": [
+        "Indian/Reunion"
+      ]
+    },
+    {
+      "friendlyName": "Apia Standard Time",
+      "offsetString": "GMT+13:00",
+      "offsetNumeric": 780,
+      "longTimezones": [
+        "Pacific/Apia"
+      ]
+    },
+    {
+      "friendlyName": "Bougainville Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Pacific/Bougainville"
+      ]
+    },
+    {
+      "friendlyName": "Chatham Time",
+      "offsetString": "GMT+13:45",
+      "offsetNumeric": 825,
+      "longTimezones": [
+        "Pacific/Chatham"
+      ]
+    },
+    {
+      "friendlyName": "Easter Island Time",
+      "offsetString": "GMT-05:00",
+      "offsetNumeric": -300,
+      "longTimezones": [
+        "Pacific/Easter"
+      ]
+    },
+    {
+      "friendlyName": "Vanuatu Standard Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Pacific/Efate"
+      ]
+    },
+    {
+      "friendlyName": "Phoenix Islands Time",
+      "offsetString": "GMT+13:00",
+      "offsetNumeric": 780,
+      "longTimezones": [
+        "Pacific/Enderbury"
+      ]
+    },
+    {
+      "friendlyName": "Tokelau Time",
+      "offsetString": "GMT+13:00",
+      "offsetNumeric": 780,
+      "longTimezones": [
+        "Pacific/Fakaofo"
+      ]
+    },
+    {
+      "friendlyName": "Fiji Standard Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Pacific/Fiji"
+      ]
+    },
+    {
+      "friendlyName": "Tuvalu Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Pacific/Funafuti"
+      ]
+    },
+    {
+      "friendlyName": "Galapagos Time",
+      "offsetString": "GMT-06:00",
+      "offsetNumeric": -360,
+      "longTimezones": [
+        "Pacific/Galapagos"
+      ]
+    },
+    {
+      "friendlyName": "Gambier Time",
+      "offsetString": "GMT-09:00",
+      "offsetNumeric": -540,
+      "longTimezones": [
+        "Pacific/Gambier"
+      ]
+    },
+    {
+      "friendlyName": "Solomon Islands Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Pacific/Guadalcanal"
+      ]
+    },
+    {
+      "friendlyName": "Chamorro Standard Time",
+      "offsetString": "GMT+10:00",
+      "offsetNumeric": 600,
+      "longTimezones": [
+        "Pacific/Guam",
+        "Pacific/Saipan"
+      ]
+    },
+    {
+      "friendlyName": "Hawaii-Aleutian Standard Time",
+      "offsetString": "GMT-10:00",
+      "offsetNumeric": -600,
+      "longTimezones": [
+        "Pacific/Honolulu",
+        "Pacific/Johnston"
+      ]
+    },
+    {
+      "friendlyName": "Line Islands Time",
+      "offsetString": "GMT+14:00",
+      "offsetNumeric": 840,
+      "longTimezones": [
+        "Pacific/Kiritimati"
+      ]
+    },
+    {
+      "friendlyName": "Kosrae Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Pacific/Kosrae"
+      ]
+    },
+    {
+      "friendlyName": "Marshall Islands Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Pacific/Kwajalein",
+        "Pacific/Majuro"
+      ]
+    },
+    {
+      "friendlyName": "Marquesas Time",
+      "offsetString": "GMT-09:30",
+      "offsetNumeric": -570,
+      "longTimezones": [
+        "Pacific/Marquesas"
+      ]
+    },
+    {
+      "friendlyName": "Samoa Standard Time",
+      "offsetString": "GMT-11:00",
+      "offsetNumeric": -660,
+      "longTimezones": [
+        "Pacific/Midway",
+        "Pacific/Pago_Pago"
+      ]
+    },
+    {
+      "friendlyName": "Nauru Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Pacific/Nauru"
+      ]
+    },
+    {
+      "friendlyName": "Niue Time",
+      "offsetString": "GMT-11:00",
+      "offsetNumeric": -660,
+      "longTimezones": [
+        "Pacific/Niue"
+      ]
+    },
+    {
+      "friendlyName": "Norfolk Island Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Pacific/Norfolk"
+      ]
+    },
+    {
+      "friendlyName": "New Caledonia Standard Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Pacific/Noumea"
+      ]
+    },
+    {
+      "friendlyName": "Palau Time",
+      "offsetString": "GMT+09:00",
+      "offsetNumeric": 540,
+      "longTimezones": [
+        "Pacific/Palau"
+      ]
+    },
+    {
+      "friendlyName": "Pitcairn Time",
+      "offsetString": "GMT-08:00",
+      "offsetNumeric": -480,
+      "longTimezones": [
+        "Pacific/Pitcairn"
+      ]
+    },
+    {
+      "friendlyName": "Ponape Time",
+      "offsetString": "GMT+11:00",
+      "offsetNumeric": 660,
+      "longTimezones": [
+        "Pacific/Ponape"
+      ]
+    },
+    {
+      "friendlyName": "Papua New Guinea Time",
+      "offsetString": "GMT+10:00",
+      "offsetNumeric": 600,
+      "longTimezones": [
+        "Pacific/Port_Moresby"
+      ]
+    },
+    {
+      "friendlyName": "Cook Islands Standard Time",
+      "offsetString": "GMT-10:00",
+      "offsetNumeric": -600,
+      "longTimezones": [
+        "Pacific/Rarotonga"
+      ]
+    },
+    {
+      "friendlyName": "Tahiti Time",
+      "offsetString": "GMT-10:00",
+      "offsetNumeric": -600,
+      "longTimezones": [
+        "Pacific/Tahiti"
+      ]
+    },
+    {
+      "friendlyName": "Gilbert Islands Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Pacific/Tarawa"
+      ]
+    },
+    {
+      "friendlyName": "Tonga Standard Time",
+      "offsetString": "GMT+13:00",
+      "offsetNumeric": 780,
+      "longTimezones": [
+        "Pacific/Tongatapu"
+      ]
+    },
+    {
+      "friendlyName": "Chuuk Time",
+      "offsetString": "GMT+10:00",
+      "offsetNumeric": 600,
+      "longTimezones": [
+        "Pacific/Truk"
+      ]
+    },
+    {
+      "friendlyName": "Wake Island Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Pacific/Wake"
+      ]
+    },
+    {
+      "friendlyName": "Wallis & Futuna Time",
+      "offsetString": "GMT+12:00",
+      "offsetNumeric": 720,
+      "longTimezones": [
+        "Pacific/Wallis"
+      ]
+    }
+  ]

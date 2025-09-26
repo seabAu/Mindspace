@@ -1,0 +1,88 @@
+.resize-handle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: transparent;
+    cursor: col-resize;
+    z-index: 10;
+    touch-action: none;
+}
+
+.resize-handle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.resize-handle:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.column-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.column-header-content {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.column-header-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.column-drag-handle {
+    cursor: grab;
+    margin-right: 4px;
+    opacity: 0.5;
+}
+
+.column-drag-handle:hover {
+    opacity: 1;
+}
+
+.sort-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort-index {
+    font-size: 10px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+.hidden-data-row {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.hidden-data-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.hidden-data-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hidden-data-label {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+}
+

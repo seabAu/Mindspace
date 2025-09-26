@@ -1,0 +1,669 @@
+/* @import "../../vars.css"; */
+/*
+* {
+    line-height: 1.4;
+    font-family: "harmonia sans", roboto, arial;
+}
+*/
+
+:root {
+    --data-list-item-bgcolor: #f6f6f611;
+    --data-list-item-border: #grey;
+}
+
+.data-list-container {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-content: flex-start;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0.0rem;
+    border: 1px solid rgba(128, 128, 128, 0);
+    transition: all 1s ease-in-out 0s;
+}
+
+/* .data-list-container .data-list {
+    display: block;
+    position: relative;
+    justify-content: space-between; 
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: auto;
+    overflow-y: auto;
+    transition: all 1s ease-in-out 0s;
+    border-color: #000 #111 #111;
+    border-style: groove;
+    border-width: thin;
+    box-shadow: rgba(0, 0, 0, 0.247059) 0 1px 2px inset, rgba(255, 255, 255, 0.0784314) 0 1px;
+} */
+
+.data-list-container .data-list {
+    /* display: flex; */
+    position: relative;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: baseline;
+    flex-direction: row;
+    width: auto;
+    overflow-y: auto;
+    transition: all 1s ease-in-out 0s;
+    border-color: #000 #111 #111;
+    border-style: groove;
+    border-width: thin;
+    box-shadow: rgba(0, 0, 0, 0.247059) 0 1px 2px inset, rgba(255, 255, 255, 0.0784314) 0 1px;
+    flex-wrap: nowrap;
+}
+
+.data-list-container .data-list * {
+    font-size: 0.85rem;
+    font-weight: 100;
+}
+
+ul.data-list-array:nth-of-type(1) {
+    list-style-position: inside;
+    border-left: solid 0px red;
+}
+
+.data-list-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 80%;
+    height: 80%;
+    border: 1px solid grey;
+    overflow-y: auto;
+}
+
+ul.data-list-array {
+    counter-increment: li;
+    list-style: none;
+}
+
+.data-list ul.data-list-array:before {
+    content: "[";
+    margin: 0px;
+    padding: 0px;
+    margin-inline: 0px;
+    padding-inline: 0px;
+}
+
+.data-list ul.data-list-array:after {
+    content: "]";
+    margin: 0px;
+    padding: 0px;
+    margin-inline: 0px;
+    padding-inline: 0px;
+}
+
+.data-list ul.data-list-array:has(:nth-child(3)):after {
+    content: "],";
+}
+
+ul.data-list-obj {
+    list-style: none;
+}
+
+.data-list ul.data-list-obj:before {
+    content: "{";
+    margin: 0px;
+    padding: 0px;
+    margin-inline: 0px;
+    padding-inline: 0px;
+}
+
+.data-list ul.data-list-obj:after {
+    content: "}";
+    margin: 0px;
+    padding: 0px;
+    margin-inline: 0px;
+    padding-inline: 0px;
+}
+
+.data-list ul.data-list-obj:has(:not(:nth-child(1))):after {
+    content: "}";
+}
+
+.data-list ul.data-list-obj:has(:nth-child(2)):after {
+    content: "},";
+}
+
+ul li .data-list-key + .data-list-value:has(ul.data-list-array) {
+    font-size: 1.2rem;
+    /* display: inline; */
+}
+
+.data-list-value:has(.data-list-array) {
+    /* display: inline; */
+    font-size: 1.2rem;
+}
+
+.data-list-array > li.data-list-item {
+    list-style-type: none;
+    border-bottom: 1px solid #212121;
+    position: relative;
+    /*
+        padding: 15px 0;
+        max-width: 80%;
+        */
+}
+
+li::marker {}
+
+ul.data-list-array::marker {
+    content: "✝ ";
+    font-size: 1.2rem;
+    display: list-item;
+    content: "[" "]";
+}
+
+li.data-list-item {
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+    padding-inline-start: 0rem;
+    padding-inline-end: 0rem;
+    padding-block-start: 0rem;
+    padding-block-end: 0rem;
+}
+
+ul.data-list-obj,
+ul.data-list-array {
+    color: white;
+    counter-reset: item;
+    /* 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-grow: 1;
+    */
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-block-start: 0rem;
+    /* margin-block-end: 0.25rem; */
+    margin-block-end: 0rem;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+    padding-inline-start: 0.0rem;
+    padding-inline-end: 0.5rem;
+    padding-block-start: 0rem;
+    padding-block-end: 0rem;
+    /*
+    padding-inline-start: 0.0rem;
+    padding-inline-end: 0.0rem;
+    display: list-item;
+    */
+    display: inline;
+}
+
+/* 
+ul.data-list-obj li.data-list-item,
+ul.data-list-array li.data-list-item {
+    text-align: start;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 0;
+    padding-inline-start: 0.125rem;
+    margin-inline-start: 0.125rem;
+}
+ */
+.data-list-value ul.data-list-array,
+.data-list-value ul.data-list-obj {
+    padding: 0;
+    margin: 0;
+}
+
+ul.data-list-obj li.data-list-item :not(:has(div)) {
+    display: inline;
+}
+
+ul.data-list-obj li.data-list-item,
+ul.data-list-array li.data-list-item {
+    text-align: start;
+    border-left: 1px solid var(--data-list-item-bordercolor);
+    border-right: 1px solid var(--data-list-item-bordercolor);
+    padding: 0;
+    padding-inline-start: 0.25rem;
+    margin-inline-start: 0.25rem;
+    display: flow;
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* margin-top: 0rem; */
+    /* margin-bottom: 0.125rem; */
+    /* margin-inline-start: 0.75rem; */
+    /* margin-inline-end: 0.75rem; */
+}
+
+
+ul.data-list-obj li.data-list-item,
+ul.data-list-array li.data-list-item {
+    /* display: flow; */
+    display: flex;
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* margin-top: 0rem; */
+    /* margin-bottom: 0.125rem; */
+    /* margin-inline-start: 0.75rem; */
+    /* margin-inline-end: 0.75rem; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+li.data-list-item {
+    display: flex;
+    flex-direction: row !important;
+}
+
+li.data-list-item:not(:has(div)) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 
+li.data-list-item .data-list-key,
+li.data-list-item .data-list-value {
+    display: inline;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    padding-inline-start: 0rem;
+    padding-inline-end: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-block-start: 0rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    flex-grow: 1;
+    border: 0px solid #b9b9b9;
+    position: relative;
+    z-index: 100;
+}
+*/
+
+/* 
+li.data-list-item .data-list-key,
+li.data-list-item .data-list-value {
+    text-align: start;
+    text-transform: capitalize;
+    display: inline;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-inline-start: 0rem;
+    padding-inline-end: 0rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-grow: 1;
+    border: 0px solid #b9b9b9;
+    position: relative;
+    z-index: 100;
+    text-wrap: auto;
+    overflow-x: hidden;
+    max-width: 100% !important;
+}
+*/
+ul.data-list-obj li.data-list-item,
+ul.data-list-array li.data-list-item {
+    text-align: start;
+    border-left: 1px solid var(--data-list-item-bordercolor);
+    border-right: 1px solid var(--data-list-item-bordercolor);
+    padding: 0;
+    padding-inline-start: 0.25rem;
+    margin-inline-start: 0.25rem;
+    /* margin-top: 0rem; */
+    /* margin-bottom: 0.125rem; */
+    /* margin-inline-start: 0.75rem; */
+    /* margin-inline-end: 0.75rem; */
+    /* display: flow; */
+    display: flex;
+    display: flow;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* margin-top: 0rem; */
+    /* margin-bottom: 0.125rem; */
+    /* margin-inline-start: 0.75rem; */
+    /* margin-inline-end: 0.75rem; */
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: stretch;
+}
+
+li.data-list-item .data-list-value {
+    background-color: transparent;
+    flex: 1 1 80%;
+}
+
+li.data-list-item .data-list-key {
+    min-width: 10rem;
+    flex: 0 1 20%;
+}
+
+.data-list-expandable ~ li {}
+
+.data-list-compact li.data-list-item .data-list-key,
+.data-list-compact li.data-list-item .data-list-value {
+    display: inline !important;
+}
+
+/* Expandable list styling */
+
+/*
+
+li.data-list-item:not(:has(ul.data-list-obj)) {
+    background: rgba( 0, 0, 0, 0.5);
+}
+ul.data-list-obj:has(:nth-child(10)) li.data-list-item .data-list-key, 
+ul.data-list-array:has(:nth-child(10)) li.data-list-item .data-list-key {
+    color: blue;
+}
+.data-list-key+ul.data-list-obj .data-list-item-expandable:has(:nth-child(3)), 
+.data-list-key+ul.data-list-array .data-list-item-expandable:has(:nth-child(3)) {
+    color: blue;
+}
+li.data-list-item.data-list-expandable {
+}
+
+li.data-list-item.data-list-expandable .data-list-key {
+}
+
+ul.data-list-obj:has(> :nth-child(-n+1):last-child) {
+}
+ul.data-list-obj.data-list-expandable .data-list-item:has(:nth-child(2))::before, 
+ul.data-list-array.data-list-expandable .data-list-item:has(:nth-child(2))::before {
+    content: " + ";
+}
+*/
+
+ul.data-list-obj.data-list-expandable .data-list-item:has(:nth-child(3)),
+ul.data-list-array.data-list-expandable .data-list-item:has(:nth-child(3)) {
+    /*border: 1px solid #aaaaaa;*/
+    background-color: #00000011;
+}
+
+ul.data-list-obj.data-list-expandable .data-list-item:has(:nth-child(3)) > .data-list-key,
+ul.data-list-array.data-list-expandable .data-list-item:has(:nth-child(3)) > .data-list-key {
+    background-color: transparent;
+    color: #93c0ff;
+    cursor: pointer;
+}
+
+ul.data-list-obj.data-list-expandable .data-list-item:has(:nth-child(3))::before,
+ul.data-list-array.data-list-expandable .data-list-item:has(:nth-child(3))::before {}
+
+.data-list-expandable li.data-list-item .data-list-key {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid black;
+    text-align: start;
+}
+
+.data-list-expandable li.data-list-item .data-list-key::before {}
+
+li.data-list-item:not(:has(ul.data-list-obj)) .data-list-key {
+    background-color: rgba(55, 55, 100, 0);
+}
+
+.data-list-expandable {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+.data-list-expandable > li.data-list-item {
+    list-style-type: none;
+    border-bottom: 1px solid #212121;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.data-list-expandable label[class^="tab"]:hover {
+    cursor: pointer;
+}
+
+.data-list-expandable input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.data-list-expandable input[class^="tab"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.data-list-expandable input[class^="tab"]:hover {
+    cursor: pointer;
+}
+
+.data-list-expandable label[class^="tab"] {
+    font-weight: bold;
+}
+
+.data-list-expandable .data-list-content {
+    height: auto;
+    max-height: 0;
+    max-width: 100%;
+    /*        background: yellow;*/
+    overflow: hidden;
+    transform: translateY(5px);
+    transition: all 180ms ease-in-out 0ms;
+}
+
+.data-list-expandable li.data-list-item input[class^="tab"]:checked ~ .data-list-content {
+    max-height: 100%;
+    transition: all 150ms ease-in-out 0ms;
+}
+
+.data-list-expandable input[class^="tab"]:checked ~ .data-list-content {
+    margin-bottom: 4px;
+}
+
+.data-list-expandable .open-close-icon {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    /* transform: translatey(2px); */
+}
+
+.data-list-expandable .open-close-icon i {
+    position: absolute;
+    left: 0;
+}
+
+.data-list-expandable .open-close-icon .fa-minus {
+    opacity: 0;
+    transform: rotate(-90deg);
+    transition: transform 150ms ease-in-out 0ms;
+}
+
+.data-list-expandable input[class^="tab"]:checked ~ .open-close-icon .fa-minus {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: transform 150ms ease-in-out 0ms;
+}
+
+.data-list-expandable .open-close-icon .fa-plus {
+    opacity: 1;
+    transform: rotate(-90deg);
+    transition: opacity 50ms linear 0ms, transform 150ms ease-in-out 0ms;
+}
+
+.data-list-expandable input[class^="tab"]:checked ~ .open-close-icon .fa-plus {
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: opacity 50ms linear 0ms, transform 150ms ease-in-out 0ms;
+}
+
+ul {
+    counter-reset: li;
+    /* Initiate a counter */
+    margin-left: 0;
+    /* Remove the default left margin */
+    padding-left: 0;
+    /* Remove the default left padding */
+}
+
+ul > li.data-list-item {
+    position: relative;
+    /* Create a positioning context */
+    /* margin: 0 0 6px 2em; */
+    /* Give each list item a left margin to make room for the numbers */
+    /* padding: 4px 8px; */
+    /* Add some spacing around the content */
+    list-style: none;
+    /* Disable the normal item numbering */
+    border-top: 0.125rem inset #666666;
+    /* background: var(--data-list-item-bgcolor); */
+}
+
+ul > li.data-list-item.overlay-bg {
+    background: var(--data-list-item-bgcolor);
+}
+
+ul.data-list > li.data-list-item:before {
+    content: counter(li);
+    /* Use the counter as content */
+    counter-increment: li;
+    /* Increment the counter by 1 */
+    /* Position and style the number */
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 2em;
+    /* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+    margin-right: 8px;
+    padding: 4px;
+    border-top: 2px solid #666;
+    color: #fff;
+    background: #666;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+}
+
+li.data-list-item ul,
+li.data-list-item ul {
+    margin-top: 6px;
+}
+
+ul ul li.data-list-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.data-list-label {
+    padding: 0;
+    margin: 0;
+    color: var(--color-text);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 0.5rem;
+    white-space: nowrap;
+}
+
+.data-list-controls {
+    border-color: #000 #111 #111;
+    border-width: thin;
+    border-style: groove;
+    box-shadow: rgba(0, 0, 0, 0.247059) 0 1px 2px inset, rgba(255, 255, 255, 0.0784314) 0 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* height: 1.5rem; */
+    max-height: 100%;
+    min-height: min-content;
+    width: 100%;
+}
+
+
+/* Compactness styling */
+.data-list.data-list-compact {}
+
+.data-list.data-list-compact .data-list-item {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-block: 0;
+}
+
+.data-list.data-list-compact ul.data-list-obj:before,
+.data-list.data-list-compact ul.data-list-obj:after,
+.data-list.data-list-compact ul.data-list-array:before,
+.data-list.data-list-compact ul.data-list-array:after {
+    content: "";
+    content: none;
+}
+
+/* Collapsed styling */
+
+.data-list.data-list-collapsed {
+    height: 0px;
+}
+
+/*
+.data-list-container.data-list-collapsed .data-list {
+    height: 0%;
+}
+
+.data-list-container.data-list-collapsed .data-list * {
+    height: 0%;
+}
+
+.data-list-container.data-list-compact .data-list .data-list-item {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-block: 0;
+}
+
+.data-list-container.data-list-compact .data-list ul.data-list-obj:before, 
+.data-list-container.data-list-compact .data-list ul.data-list-obj:after, 
+.data-list-container.data-list-compact .data-list ul.data-list-array:before, 
+.data-list-container.data-list-compact .data-list ul.data-list-array:after {
+    content: none;
+}
+.data-list-container.data-list-collapsed .data-list {
+    height: 0%;
+}
+
+*/

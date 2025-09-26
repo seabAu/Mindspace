@@ -1,0 +1,66 @@
+name: Deploy Client to Production
+
+on:
+  push:
+    branches: [ main ]
+    paths: 
+      - 'client/**'
+      - '.github/workflows/deploy-client.yml'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+        cache: 'npm'
+        cache-dependency-path: client/package-lock.json
+        
+    - name: Install dependencies
+      working-directory: ./client
+      run: npm ci
+      
+    - name: Build application
+      working-directory: ./client
+      run: npm run build
+      env:
+        VITE_NODE_ENV: production
+        VITE_API_URL: https://mindspace.seangb.com
+        VITE_API_PATH: https://mindspace.seangb.com/api
+        
+    - name: Build Docker image
+      run: |
+        docker build -t mindspace-client:${{ github.sha }} ./client
+        docker tag mindspace-client:${{ github.sha }} mindspace-client:latest
+        
+    - name: Save Docker image
+      run: docker save mindspace-client:latest | gzip > mindspace-client.tar.gz
+      
+    - name: Copy files to server
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        source: "mindspace-client.tar.gz,docker-compose.prod.yml"
+        target: "/home/sites/mindspace/"
+        
+    - name: Deploy to server
+      uses: appleboy/ssh-action@v0.1.5
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        script: |
+          cd /home/sites/mindspace/
+          docker load < mindspace-client.tar.gz
+          docker-compose -f docker-compose.prod.yml up -d client
+          docker system prune -f
+          rm mindspace-client.tar.gz

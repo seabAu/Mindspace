@@ -1,0 +1,563 @@
+    [class^="modal"],
+    [class*=" modal"] {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    
+    [class^="modal"]::before,
+    [class*=" modal"]::before,
+    [class^="modal"]::after,
+    [class*=" modal"]::after {
+        box-sizing: border-box;
+    }
+    
+    [class^="modal"] [class^="modal"],
+    [class*=" modal"] [class^="modal"],
+    [class^="modal"] [class*=" modal"],
+    [class*=" modal"] [class*=" modal"] {
+        box-sizing: border-box;
+    }
+    
+    [class^="modal"] [class^="modal"]::before,
+    [class*=" modal"] [class^="modal"]::before,
+    [class^="modal"] [class*=" modal"]::before,
+    [class*=" modal"] [class*=" modal"]::before,
+    [class^="modal"] [class^="modal"]::after,
+    [class*=" modal"] [class^="modal"]::after,
+    [class^="modal"] [class*=" modal"]::after,
+    [class*=" modal"] [class*=" modal"]::after {
+        box-sizing: border-box;
+    }
+    
+    .modal-root .modal-container {
+        position: fixed;
+        inset: 0;
+        outline: 0;
+        top: 0;
+        bottom: 0;
+        inset-inline-end: 0;
+        inset-inline-start: 0;
+        -webkit-overflow-scrolling: touch;
+        overflow: auto;
+        position: fixed;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+        transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        opacity: 1.0;
+        z-index: 1006;
+    }
+    
+    .modal-root .modal-container {
+        position: fixed;
+        top: 0;
+        inset-inline-end: 0;
+        bottom: 0;
+        inset-inline-start: 0;
+        z-index: 1004;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+        transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        opacity: 1.0;
+    }
+    
+    .modal-root .modal-container-rtl {
+        direction: rtl;
+    }
+    
+    .modal-root .modal-centered {
+        text-align: center;
+    }
+    
+    .modal-root .modal-centered::before {
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+        content: "";
+    }
+    
+    .modal-root .modal-centered .modal {
+        top: 0;
+        display: inline-block;
+        padding-bottom: 0;
+        text-align: start;
+        vertical-align: middle;
+    }
+    
+    @media (max-width: 767) {
+        .modal-root .modal {
+            max-width: calc(100vw - 16px);
+            margin: 8 auto;
+        }
+        .modal-root .modal-centered .modal {
+            flex: 1;
+        }
+    }
+    
+    .modal {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        list-style: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        pointer-events: none;
+        position: relative;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-width: calc(100vw - 20%);
+        padding-bottom: 24px;
+        max-height: 80%;
+        overflow: hidden;
+    }
+
+    .center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .modal {
+        /* 
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        list-style: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        pointer-events: none;
+        position: fixed;
+        right: 25%;
+        width: auto;
+        max-width: calc(100vw - 20%);
+        padding-bottom: 24px;
+        margin: auto;
+        */
+    }
+
+    .modal .modal-content {
+        position: relative;
+        background-color: #ffffff;
+        background-clip: padding-box;
+        border: 0;
+        border-radius: var(--modal-border-radius);
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+        pointer-events: auto;
+        padding: 0.0rem 0.0rem;
+        /* overflow: hidden; */
+        /* height: 100%; */
+        /* max-height: 60vh; */
+    }
+    .modal .modal-content.modal-dark {
+        background-color: var(--color-secondary);
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    :root {
+        --modal-header-height: 2.0rem;
+        --modal-border-radius: 1.0rem 1.0rem 0.0rem 0.0rem;
+    }
+
+    /*
+    .modal-close {
+        position: absolute;
+        top: calc(var(--modal-header-height) / 4);
+        inset-inline-end: 17px;
+        z-index: 1010;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 600;
+        line-height: 1;
+        text-decoration: none;
+        background: transparent;
+        border-radius: var(--modal-border-radius);
+        width: calc(var(--modal-header-height));
+        height: calc(var(--modal-header-height));
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        transition: color 0.2s, background-color 0.2s;
+    }
+    */ 
+    .modal-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        inset-inline-end: calc(var(--modal-header-height) / 4);
+        padding: 0;
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 600;
+        line-height: 1;
+        text-decoration: none;
+        background: transparent;
+        border-radius: var(--modal-border-radius);
+        width: calc(var(--modal-header-height));
+        height: calc(var(--modal-header-height));
+        outline: 0;
+        cursor: pointer;
+        transition: color 0.2s, background-color 0.2s;
+        z-index: 1010;
+    }
+
+    .modal-menu .modal-menu-button {
+        top: calc(var(--modal-header-height) / 4);
+        /* left: calc(var(--modal-header-height) / 4); */
+        position: relative;
+    }
+
+    .modal-menu .modal-menu-button:hover {
+        color: rgba(0, 0, 0, 0.88);
+        background-color: rgba(0, 0, 0, 0.06);
+        text-decoration: none;
+    }
+    
+    .modal-menu .modal-menu-button:active {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    
+    .modal-menu .modal-menu-button:focus-visible {
+        outline: 2px solid #91caff;
+        outline-offset: 1px;
+        transition: outline-offset 0s, outline 0s;
+    }
+    
+    .modal-menu .modal-menu-button .modal-close-x {
+        display: block;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 22px;
+        text-align: center;
+        text-transform: none;
+        text-rendering: auto;
+    }
+    
+    /*
+    .modal .modal-content .modal-header {
+        color: rgba(0, 0, 0, 0.88);
+        background: var(--color-tertiary);
+        border-radius: var(--modal-border-radius);
+        margin-bottom: 8px;
+        height: var(--modal-header-height);
+        padding: 1.0rem 1.0rem;
+    }
+    */ 
+    .modal .modal-content .modal-header {
+        color: rgba(0, 0, 0, 0.88);
+        background: var(--color-tertiary);
+        border-radius: var(--modal-border-radius);
+        /* margin-bottom: 8px; */
+        height: var(--modal-header-height);
+        padding: 0.0rem 1.0rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .modal .modal-content .modal-header .modal-title {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.88);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        word-wrap: break-word;
+        color: var(--color-text);
+        text-shadow: 0rem 0rem 0.115rem #000000f7, 0rem 0rem 0.125rem #000000;
+    }
+    
+    .modal .modal-content .modal-body {
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        word-wrap: break-word;
+        padding: 1.0rem 1.0rem;
+        overflow: auto !important;
+        height: 100%;
+        max-height: 60vh;
+    }
+
+    .modal .modal-content .modal-footer {
+        text-align: end;
+        background: inherit;
+        margin-top: 0;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    .modal .modal-content .modal-footer .modal-btn+.modal-btn:not(.modal-dropdown-trigger) {
+        margin-bottom: 0;
+        margin-inline-start: 8px;
+    }
+    
+    .modal .modal-open {
+        overflow: hidden;
+    }
+    
+    .modal-pure-panel {
+        top: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .modal-pure-panel .modal-content,
+    .modal-pure-panel .modal-body,
+    .modal-pure-panel .modal-confirm-body-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+    }
+    
+    .modal-pure-panel .modal-confirm-body {
+        margin-bottom: auto;
+    }
+    
+    .modal-confirm-rtl {
+        direction: rtl;
+    }
+    
+    .modal-confirm .modal-header {
+        display: none;
+    }
+    
+    .modal-confirm .modal-confirm-body-wrapper::before {
+        display: table;
+        content: "";
+    }
+    
+    .modal-confirm .modal-confirm-body-wrapper::after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+    
+    .modal-confirm .modal-confirm-body {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .modal-confirm .modal-confirm-body .modal-confirm-title {
+        flex: 0 0 100%;
+        display: block;
+        overflow: hidden;
+        color: rgba(0, 0, 0, 0.88);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .modal-confirm .modal-confirm-body .modal-confirm-title+.modal-confirm-content {
+        margin-block-start: 8px;
+        flex-basis: 100%;
+        max-width: calc(100% - 34px);
+    }
+    
+    .modal-confirm .modal-confirm-body .modal-confirm-content {
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+    }
+    
+    .modal-confirm .modal-confirm-body>.modal-menu-icon {
+        flex: none;
+        margin-inline-end: 12px;
+        font-size: 22px;
+    }
+    
+    .modal-confirm .modal-confirm-body>.modal-menu-icon+.modal-confirm-title {
+        flex: 1;
+    }
+    
+    .modal-confirm .modal-confirm-body>.modal-menu-icon+.modal-confirm-title+.modal-confirm-content {
+        margin-inline-start: 34px;
+    }
+    
+    .modal-confirm .modal-confirm-btns {
+        text-align: end;
+        margin-top: 12px;
+    }
+    
+    .modal-confirm .modal-confirm-btns .modal-btn+.modal-btn {
+        margin-bottom: 0;
+        margin-inline-start: 8px;
+    }
+    
+    .modal-confirm-error .modal-confirm-body>.modal-menu-icon {
+        color: #ff4d4f;
+    }
+    
+    .modal-confirm-warning .modal-confirm-body>.modal-menu-icon,
+    .modal-confirm-confirm .modal-confirm-body>.modal-menu-icon {
+        color: #faad14;
+    }
+    
+    .modal-confirm-info .modal-confirm-body>.modal-menu-icon {
+        color: #1677ff;
+    }
+    
+    .modal-confirm-success .modal-confirm-body>.modal-menu-icon {
+        color: #52c41a;
+    }
+    
+    .modal-zoom-leave .modal-btns {
+        pointer-events: none;
+    }
+    
+    .modal-root .modal-container-rtl {
+        direction: rtl;
+    }
+    
+    .modal-root .modal-container-rtl .modal-confirm-body {
+        direction: rtl;
+    }
+    
+    .modal-root .modal.modal-zoom-enter,
+    .modal-root .modal.modal-zoom-appear {
+        transform: none;
+        opacity: 0;
+        animation-duration: 0.3s;
+        user-select: none;
+    }
+    
+    .modal-root .modal-container.modal-hidden {
+        z-index: -100;
+    }
+    
+    .modal-root .modal-container.modal-slide.modal-hidden {
+        left: 100%;
+    }
+    
+    .modal-root .modal-container.modal-fade.modal-hidden {
+        opacity: 0;
+    }
+    
+    .modal-root .modal-container.modal-zoom.modal-hidden {
+        height: 0%;
+    }
+    
+    .modal-root .modal-container .modal-hidden {
+        display: none;
+    }
+    
+    .modal-root .modal-fade-enter,
+    .modal-root .modal-fade-appear {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+    }
+    
+    .modal-root .modal-fade-leave {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+    }
+    
+    .modal-root .modal-fade-enter.modal-fade-enter-active,
+    .modal-root .modal-fade-appear.modal-fade-appear-active {
+        animation-name: modalFadeIn;
+        animation-play-state: running;
+    }
+    
+    .modal-root .modal-fade-leave.modal-fade-leave-active {
+        animation-name: modalFadeOut;
+        animation-play-state: running;
+        pointer-events: none;
+    }
+    
+    .modal-root .modal-fade-enter,
+    .modal-root .modal-fade-appear {
+        opacity: 0;
+        animation-timing-function: linear;
+    }
+    
+    .modal-root .modal-fade-leave {
+        animation-timing-function: linear;
+    }
+    
+    .modal-zoom-enter,
+    .modal-zoom-appear {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+    }
+    
+    .modal-zoom-leave {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+    }
+    
+    .modal-zoom-enter.modal-zoom-enter-active,
+    .modal-zoom-appear.modal-zoom-appear-active {
+        animation-name: modalZoomIn;
+        animation-play-state: running;
+    }
+    
+    .modal-zoom-leave.modal-zoom-leave-active {
+        animation-name: modalZoomOut;
+        animation-play-state: running;
+        pointer-events: none;
+    }
+    
+    .modal-zoom-enter,
+    .modal-zoom-appear {
+        transform: scale(0);
+        opacity: 0;
+        animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+    }
+    
+    .modal-zoom-enter-prepare,
+    .modal-zoom-appear-prepare {
+        transform: none;
+    }
+    
+    .modal-zoom-leave {
+        animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    }
+    
+    @keyframes modalFadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes modalFadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes modalZoomIn {
+        0% {
+            transform: scale(0.2);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes modalZoomOut {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0.2);
+            opacity: 0;
+        }
+    }
